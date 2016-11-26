@@ -1,0 +1,26 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "My New Hugo Site"
+languageCode = "en-us"
+theme = "basic-docs"
+MetaDataFormat = "yaml"
+
+[params]
+    param1 = "foo"
+    param2 = "bar"
+
+[[menu.main]]
+    name = "Docs Home"
+    identifier = "docs home"
+    pre = "<i class='fa fa-home'></i>"
+    url = "/home"
+    weight = -220
+[[menu.main]]
+    name = "Getting Started"
+    identifier = "getting started"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -200
+[[menu.main]]
+    name = "Fundamentals"
+    identifier = "fundamentals"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -180

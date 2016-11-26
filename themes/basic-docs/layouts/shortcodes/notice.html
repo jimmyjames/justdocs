@@ -1,0 +1,22 @@
+<div class="notices {{ .Get 0 }}">
+  <table>
+    <tbody>
+      <tr>
+        <td class="notice-icon">
+          {{ with .Get 0 }}
+            {{ if eq "note" . }}
+              <i class="fa fa-info"></i>
+            {{ else if eq "tip" . }}
+              <i class="fa fa-lightbulb-o"></i>
+            {{ else if eq "warning" . }}
+              <i class="fa fa-warning"></i>
+            {{ end }}
+          {{ end }}
+        </td>
+        <td class="notice-content">
+          {{ .Inner }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
