@@ -1,15 +1,8 @@
 ---
 date: 2016-11-25T08:54:46-06:00
-title: Register
-menu:
-  main:
-    parent: getting started
-weight: 10
+title: Getting Started
+tagline: Start writing with PrettyDocs.
 ---
-
-{{< tagline >}}
-Get up and running on the SmartThings Developer Platform.
-{{< /tagline >}}
 
 ## Up and Running
 

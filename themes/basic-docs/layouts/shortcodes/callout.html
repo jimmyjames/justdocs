@@ -1,10 +1,10 @@
-<div class="notices {{ .Get 0 }}">
+<div class="callout {{ .Get 0 }}">
   <table>
     <tbody>
       <tr>
-        <td class="notice-icon">
+        <td class="callout-icon">
           {{ with .Get 0 }}
-            {{ if eq "note" . }}
+            {{ if eq "info" . }}
               <i class="fa fa-info"></i>
             {{ else if eq "tip" . }}
               <i class="fa fa-lightbulb-o"></i>
@@ -13,7 +13,7 @@
             {{ end }}
           {{ end }}
         </td>
-        <td class="notice-content">
+        <td class="callout-content">
           {{ .Inner }}
         </td>
       </tr>

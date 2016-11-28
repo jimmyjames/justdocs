@@ -1,10 +1,13 @@
 <!-- Side nav -->
 <aside>
   <div id="sidebar" class="nav-collapse">
-    <div id="close-button">
-      <i class="fa fa-close fa-lg"></i>
-    </div>
+
     <ul class="sidebar-nav sidebar-menu">
+      <li>
+        <a href="#" id="close-button">
+          <i class="fa fa-close fa-lg"></i>
+        </a>
+      </li>
       {{ $currentNode := . }}
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}

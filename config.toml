@@ -17,10 +17,17 @@ MetaDataFormat = "yaml"
 [[menu.main]]
     name = "Getting Started"
     identifier = "getting started"
+    url = "/getting-started/"
     pre = "<i class='fa fa-road'></i>"
     weight = -200
 [[menu.main]]
-    name = "Fundamentals"
-    identifier = "fundamentals"
-    pre = "<i class='fa fa-road'></i>"
+    name = "Usage"
+    identifier = "usage"
+    pre = "<i class='fa fa-book'></i>"
     weight = -180
+[[menu.main]]
+    name = "Contributing"
+    identifier = "contributing"
+    pre = "<i class='fa fa-pencil'></i>"
+    url = "/contributing/"
+    weight = -160
