@@ -7,6 +7,8 @@ menu:
     parent: usage
 weight: 20
 notoc: true
+prev: /usage/organization
+next: /usage/code-blocks
 ---
 
 Provide an optional Call to Action for your content by specifying a `tagline` in your front matter.

@@ -31,3 +31,8 @@ MetaDataFormat = "yaml"
     pre = "<i class='fa fa-pencil'></i>"
     url = "/contributing/"
     weight = -160
+[[menu.main]]
+  name="AsciiDoc Test"
+  identifier = "asciidoc"
+  url = "/formats/"
+  weight = -150

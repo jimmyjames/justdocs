@@ -24,20 +24,22 @@
 
     <body>
       <section id="container">
-        {{ partial "title-bar.html" . }}
         {{ partial "menu.html" . }}
-
+        {{ partial "title-bar.html" . }}
         <!-- main content -->
         <section id="main-content">
             <!-- <section class="wrapper"> -->
+
               <div class="article-tagline">
                 <h1> {{ .Title }} </h1>
+                {{ if isset .Params "tagline" }}
                 <p>{{ .Params.tagline | safeHTML }}</p>
+                {{ end }}
               </div>
               <div class="article-body">
                 <div class="row">
                   {{ if not .Params.notoc }}
-                    <div class="col-md-9 col-sm-12">
+                    <div class="col-lg-9 col-sm-12">
                   {{ else }}
                     <div class="col-sm-12">
                   {{ end }}

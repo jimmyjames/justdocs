@@ -6,4 +6,6 @@ menu:
   main:
     parent: usage
 weight: 30
+prev: /usage/code-blocks
+next: /usage/callouts
 ---

@@ -6,4 +6,6 @@ menu:
   main:
     parent: usage
 weight: 15
+prev: /getting-started
+next: /usage/tagline
 ---

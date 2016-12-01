@@ -6,6 +6,8 @@ menu:
   main:
     parent: usage
 weight: 35
+prev: /usage/toc
+next: /contributing/index
 ---
 
 ## Callout Shortcode

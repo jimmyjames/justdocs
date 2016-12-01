@@ -6,6 +6,8 @@ menu:
   main:
     parent: usage
 weight: 25
+prev: /usage/tagline
+next: /usage/toc
 ---
 
 PrettyDocs uses [highlight.js](https://highlightjs.org/) and Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) to show code examples.

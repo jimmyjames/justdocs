@@ -2,6 +2,9 @@
 date: 2016-11-25T08:54:46-06:00
 title: Getting Started
 tagline: Start writing with PrettyDocs.
+next: /usage/organization
+prev: /home/
+weight: 7
 ---
 
 ## Up and Running

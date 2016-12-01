@@ -7,31 +7,38 @@ body {
     height: 100%;
 }
 
+/* TODO remove, not necessary */
 .dark-bg {
     background: rgba(20,20,20,0.9);
-    border-bottom: 1px solid #f1f2f7;
+    /*border-bottom: 1px solid #f1f2f7;*/
+    border-bottom: 1px solid darkgray;
 }
 
 .header {
-    position: fixed;
-    left: 0;
+    /*position: fixed;*/
+    /*left: 0;*/
     right: 0;
     z-index: 1002;
     /*text-align: center;*/
     /*min-height: 60px;*/
     height: 60px;
     padding: 0 10px;
+    background: #ffffff;
     /* background-color: #06abab !important; */
-    background: #06abab;
+    /*background: #06abab;
     background: -webkit-gradient(left top, right top, color-stop(0%, #06abab), color-stop(51%, #1197b5), color-stop(71%, #1197b5), color-stop(100%, #068ab6));
     background: -webkit-linear-gradient(left, #06abab 0%, #1197b5 51%, #1197b5 71%, #068ab6 100%);
-    background: linear-gradient(to right, #06abab 0%, #1197b5 51%, #1197b5 71%, #068ab6 100%);
+    background: linear-gradient(to right, #06abab 0%, #1197b5 51%, #1197b5 71%, #068ab6 100%);*/
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
-
+.github-link {
+  float: right;
+  margin-right: 10px;
+  font-size: 36px;
+}
 .nav-menu {
   font-size: 25px !important;
-  color: white !important;
+  /*color: white !important;*/
 }
 .header > h1 {
   padding-left: 30px;
@@ -119,7 +126,8 @@ ul.sidebar-menu , ul.sidebar-menu li ul.sub{
 }
 
 ul.sidebar-menu {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
+    margin-top: 30px;
 }
 
 #sidebar > ul > li > ul.sub {
@@ -286,7 +294,7 @@ ul.sidebar-menu li.active a i {
   /*color: #757575;*/
   font-weight: 100;
   /* totally wrong way to do this... */
-  margin-top: 70px;
+  /*margin-top: 70px;*/
 }
 
 .article-tagline > p {
@@ -363,19 +371,66 @@ pre {
 /** end callouts **/
 
 /** toc **/
+#TableOfContents.floating {
+  position: fixed;
+  top: 20px;
+}
+
 #TableOfContents > ul > li > ul, #TableOfContents > ul {
   list-style: none;
 }
 
+#TableOfContents a {
+  padding: 0px 10px;
+}
+
 #TableOfContents li.active {
-  background: #e6e6e6;
+  /*background: #e6e6e6;*/
   font-weight: 600;
-  /*border-left: 1px solid lightblue;*/
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-left: 2px solid lightblue;
 }
 
 #TableOfContents a {
   text-decoration: none;
+  display: block;
 }
+
+.bottom-nav {
+  border-top: 1px solid lightgray;
+  padding-top: 10px;
+  margin-top: 40px;
+}
+
+.nav-footer .next {
+  text-align: right;
+  font-size: 16px;
+}
+
+/*.nav-footer a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-footer a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}*/
 /*.affix {
   top: 230px;
 }
@@ -383,10 +438,7 @@ pre {
   top: 500px;
 }*/
 /** end toc **/
-#TableOfContents.floating {
-  position: fixed;
-  top: 90px;
-}
+
 /** Adjust in-page anchors for fixed top bar **/
 :target:before {
   content:"";
@@ -641,6 +693,7 @@ pre .copy-btn {
 
     .header {
         position: absolute;
+        width: 100%;
     }
 
     /*sidebar*/
@@ -654,7 +707,7 @@ pre .copy-btn {
 
     }
     .show-sidebar {
-        z-index: 1002 !important;
+        z-index: 1003 !important;
         display: block !important;
         /*-webkit-transition: all 0.9s ease;
         -moz-transition: all 0.9s ease;
@@ -717,5 +770,6 @@ pre .copy-btn {
 
     .article-tagline > h1 {
       font-size: 35px;
+      margin-top: 70px;
     }
 }

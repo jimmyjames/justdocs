@@ -84,7 +84,7 @@ function init() {
     // so we can get a fancy scroll animation
     menuItems.click(function(e){
       var href = $(this).attr("href"),
-          offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+50;
+          offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+100;
       $('html, body').stop().animate({
           scrollTop: offsetTop
       }, 300);
@@ -93,8 +93,10 @@ function init() {
 
     // Bind to scroll
     $(window).scroll(function(){
-       // affix toc
-       if ($(this).scrollTop() + 70 > $('.article-body').offset().top) {
+       // affix toc]
+       var totHeight = $('#header').outerHeight() + $('.article-tagline').outerHeight();
+       console.log("totHeight: " + totHeight);
+       if ($(this).scrollTop() > $('.article-body').offset().top) {
          $('#TableOfContents').addClass('floating');
        } else {
          $('#TableOfContents').removeClass('floating');
