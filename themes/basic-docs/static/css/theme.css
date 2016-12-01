@@ -1,34 +1,19 @@
 body {
-  /*font-family: 'Work Sans', sans-serif;*/
   font-family: 'Libre Franklin', sans-serif;
 }
+
 #container {
     width: 100%;
     height: 100%;
 }
 
-/* TODO remove, not necessary */
-.dark-bg {
-    background: rgba(20,20,20,0.9);
-    /*border-bottom: 1px solid #f1f2f7;*/
-    border-bottom: 1px solid darkgray;
-}
-
 .header {
-    /*position: fixed;*/
-    /*left: 0;*/
+    border-bottom: 1px solid darkgray;
     right: 0;
     z-index: 1002;
-    /*text-align: center;*/
-    /*min-height: 60px;*/
     height: 60px;
     padding: 0 10px;
     background: #ffffff;
-    /* background-color: #06abab !important; */
-    /*background: #06abab;
-    background: -webkit-gradient(left top, right top, color-stop(0%, #06abab), color-stop(51%, #1197b5), color-stop(71%, #1197b5), color-stop(100%, #068ab6));
-    background: -webkit-linear-gradient(left, #06abab 0%, #1197b5 51%, #1197b5 71%, #068ab6 100%);
-    background: linear-gradient(to right, #06abab 0%, #1197b5 51%, #1197b5 71%, #068ab6 100%);*/
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 .github-link {
@@ -36,16 +21,16 @@ body {
   margin-right: 10px;
   font-size: 36px;
 }
+
 .nav-menu {
   font-size: 25px !important;
-  /*color: white !important;*/
 }
+
 .header > h1 {
   padding-left: 30px;
 }
 
 #sidebar {
-    /*width: 214px;*/
     width: 230px;
     height: 100%;
     position: fixed;
@@ -56,12 +41,6 @@ body {
 ul.sidebar-nav {
     margin-top: 100px;
     margin-left: 20px;
-    /*background-color: lightgray; /* testing purposes */*/
-    /*border: 2px solid; /* testing purposes */*/
-    /*-webkit-transition-duration: 0.9s;
-    -moz-transition-duration: 0.9s;
-    -o-transition-duration: 0.9s;
-    transition-duration: 0.9s;*/
 }
 
 #sidebar ul {
@@ -88,20 +67,12 @@ ul.sidebar-nav {
 #close-button {
     /*only applies for slide out menu*/
     display: none;
-    /*float: right;*/
     cursor: pointer;
-    /*font-size: 36px;*/
 }
 
 #close-button > i.fa-close {
   padding: 6px 0px;
   font-size: 36px;
-}
-
-/* adjust sroll position in content area*/
-.scroll-pos {
-     padding-top: 70px;
-     margin-top: -70px;
 }
 
 .toc-label {
@@ -119,14 +90,12 @@ ul.sidebar-nav {
   }
 }
 
-/* from hugo site */
 ul.sidebar-menu , ul.sidebar-menu li ul.sub{
     margin: -2px 0 0;
     padding: 0;
 }
 
 ul.sidebar-menu {
-    /*margin-top: 60px;*/
     margin-top: 30px;
 }
 
@@ -139,8 +108,6 @@ ul.sidebar-menu {
 }
 
 ul.sidebar-menu li ul.sub li{
-    /*background: #eeeeee;*/
-    /*background: #595959;*/
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -149,11 +116,6 @@ ul.sidebar-menu li ul.sub li{
 ul.sidebar-menu li ul.sub li:last-child{
     border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
-}
-
-ul.sidebar-menu li ul.open li a {
-  /*font-weight: 800;
-  letter-spacing: 1px*/
 }
 
 ul.sidebar-menu li ul.sub li a {
@@ -166,12 +128,10 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    /*color: #656C73;*/
     font-size: 14px;
 }
 
-ul.sidebar-menu li ul.sub li a:hover {/*, ul.sidebar-menu li ul.sub li.active a {*/
-    /*color: #ff4088;*/
+ul.sidebar-menu li ul.sub li a:hover {
     font-weight: 400;
     color: #f2f2f2;
     -webkit-transition: all 0.1s ease;
@@ -202,13 +162,11 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    /*color: #72767D;*/
     color: #f2f2f2;
     text-decoration: none;
     display: block;
     padding: 10px 0 10px 10px;
     font-size: 16px;
-    /*font-weight: 400;*/
     font-weight: 200;
     outline: none;
     -webkit-transition: all 0.3s ease;
@@ -216,29 +174,20 @@ ul.sidebar-menu li a{
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    /*border-right: 1px solid #D7D7D7;*/
-    /*border-bottom: 1px solid #D7D7D7;*/
     white-space: nowrap;
 }
 
-/*ul.sidebar-menu li.active a,*/ /*ul.sidebar-menu li a:hover,*/ ul.sidebar-menu li a:focus {
-    /*background: #eeeeee;*/
-    /*background: #595959;*/
-    /*background: #bfbfbf;*/
-    /*color: #ff4088;*/
-    /*font-weight: 400;*/
+ul.sidebar-menu li a:focus {
     display: block;
-    /*border-radius: 4px;
-    -webkit-border-radius: 4px;*/
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 ul.sidebar-menu li a:hover {
   background: #404040;
-  /*font-weight: 200;*/
   display: block;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
@@ -246,40 +195,18 @@ ul.sidebar-menu li a:hover {
   -ms-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
-ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    /*border-bottom: 1px solid #ff4088;*/
-}
-/*ul.sidebar-menu li.active a,*/ ul.sidebar-menu .sub-menu li.active a{
-    /*border-bottom: 1px solid #ff4088;*/
-}
 
 ul.sidebar-menu li a i {
     font-size: 18px;
     padding-right: 6px;
-    /*color: #ff4088;*/
 }
-
-ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
-    /*color: #ff4088;*/
-}
-
-ul.sidebar-menu li.active a i {
-    /*color: #ff4088;*/
-}
-
 
 #sidebar ul > li > a .menu-arrow {
     float: right;
     margin-right: 8px;
-    /*margin-top: 6px;*/
 }
 
-
-
-
-/*.panel > .panel-body > h1 {*/
 /* tagline */
-
 .article-tagline {
   width: 100%;
   background: #f2f3f7;
@@ -291,10 +218,7 @@ ul.sidebar-menu li.active a i {
   text-transform: uppercase;
   text-align: center;
   font-size: 60px;
-  /*color: #757575;*/
   font-weight: 100;
-  /* totally wrong way to do this... */
-  /*margin-top: 70px;*/
 }
 
 .article-tagline > p {
@@ -312,13 +236,6 @@ ul.sidebar-menu li.active a i {
 .article-body {
   padding: 20px;
 }
-/*.panel > .panel-body > h2 {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  border-top: 1px solid darkgray;
-}*/
-
-
 
 pre {
   /* bootstrap adds its own code styles */
@@ -326,7 +243,6 @@ pre {
 }
 
 /** callout **/
-
 .callout {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -365,7 +281,6 @@ pre {
 
 .callout-content {
   color: rgba(0,0,0,0.6);
-  /*border-left: 1px solid #ccf5ff;*/
   padding: 10px 10px 5px 10px;
 }
 /** end callouts **/
@@ -380,12 +295,15 @@ pre {
   list-style: none;
 }
 
+#TableOfContents > ul > li > ul > li {
+  margin-bottom: 5px; 
+}
+
 #TableOfContents a {
   padding: 0px 10px;
 }
 
 #TableOfContents li.active {
-  /*background: #e6e6e6;*/
   font-weight: 600;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -410,270 +328,6 @@ pre {
   text-align: right;
 }
 
-/*.nav-footer a:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.nav-footer a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}*/
-/*.affix {
-  top: 230px;
-}
-.affix-top {
-  top: 500px;
-}*/
-/** end toc **/
-
-/** Adjust in-page anchors for fixed top bar **/
-:target:before {
-  content:"";
-  display:block;
-  height:65px; /* fixed header height*/
-  margin:-65px 0 0; /* negative fixed header height */
-}
-
-/* Copy Code and Tooltips */
-pre .copy-btn {
-    background: url('../images/clippy.svg') no-repeat;
-    background-size: 20px 20px;
-    width: 20px;
-    height: 20px;
-    -o-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-    opacity: 0;
-    padding: 2px 6px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: bold;
-    line-height: 20px;
-    color: #333;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    background-color: #eee;
-    border: 0px;
-    border-radius: 0px 0px 0px 3px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-appearance: none
-}
-
-.copy-btn:focus {
-    text-decoration: none;
-    border-color: #51a7e8;
-    outline: none;
-    box-shadow: 0 0 5px rgba(81,167,232,0.5)
-}
-
-.copy-btn:focus:hover,.copy-btn.selected:focus {
-    border-color: #51a7e8
-}
-
-.copy-btn:hover,.copy-btn:active,.copy-btn.zeroclipboard-is-hover,.copy-btn.zeroclipboard-is-active {
-    text-decoration: none;
-    background-color: #ddd;
-    /*background-image: linear-gradient(#eee,#ddd);*/
-    border-color: #ccc
-}
-
-.copy-btn:active,.copy-btn.selected,.copy-btn.zeroclipboard-is-active {
-    background-color: #dcdcdc;
-    background-image: none;
-    border-color: #b5b5b5;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15)
-}
-
-.copy-btn.selected:hover {
-    background-color: #cfcfcf
-}
-
-.copy-btn:disabled,.copy-btn:disabled:hover,.copy-btn.disabled,.copy-btn.disabled:hover {
-    color: rgba(102,102,102,0.5);
-    cursor: default;
-    background-color: rgba(229,229,229,0.5);
-    background-image: none;
-    border-color: rgba(197,197,197,0.5);
-    box-shadow: none
-}
-
-.hljs:hover .copy-btn {
-    opacity: 1;
-}
-
-/* tooltip styles from from Primer (http://primercss.io/tooltips/) */
-.tooltipped {
-    position: relative
-}
-
-.tooltipped:after {
-    position: absolute;
-    z-index: 1000000;
-    display: none;
-    padding: 5px 8px;
-    font: normal normal 11px/1.5 Helvetica,arial,nimbussansl,liberationsans,freesans,clean,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: break-word;
-    white-space: pre;
-    pointer-events: none;
-    content: attr(aria-label);
-    background: rgba(0,0,0,0.8);
-    border-radius: 3px;
-    -webkit-font-smoothing: subpixel-antialiased
-}
-
-.tooltipped:before {
-    position: absolute;
-    z-index: 1000001;
-    display: none;
-    width: 0;
-    height: 0;
-    color: rgba(0,0,0,0.8);
-    pointer-events: none;
-    content: "";
-    border: 5px solid transparent
-}
-
-.tooltipped:hover:before,.tooltipped:hover:after,.tooltipped:active:before,.tooltipped:active:after,.tooltipped:focus:before,.tooltipped:focus:after {
-    display: inline-block;
-    text-decoration: none
-}
-
-.tooltipped-multiline:hover:after,.tooltipped-multiline:active:after,.tooltipped-multiline:focus:after {
-    display: table-cell
-}
-
-.tooltipped-s:after,.tooltipped-se:after,.tooltipped-sw:after {
-    top: 100%;
-    right: 50%;
-    margin-top: 5px
-}
-
-.tooltipped-s:before,.tooltipped-se:before,.tooltipped-sw:before {
-    top: auto;
-    right: 50%;
-    bottom: -5px;
-    margin-right: -5px;
-    border-bottom-color: rgba(0,0,0,0.8)
-}
-
-.tooltipped-se:after {
-    right: auto;
-    left: 50%;
-    margin-left: -15px
-}
-
-.tooltipped-sw:after {
-    margin-right: -15px
-}
-
-.tooltipped-n:after,.tooltipped-ne:after,.tooltipped-nw:after {
-    right: 50%;
-    bottom: 100%;
-    margin-bottom: 5px
-}
-
-.tooltipped-n:before,.tooltipped-ne:before,.tooltipped-nw:before {
-    top: -5px;
-    right: 50%;
-    bottom: auto;
-    margin-right: -5px;
-    border-top-color: rgba(0,0,0,0.8)
-}
-
-.tooltipped-ne:after {
-    right: auto;
-    left: 50%;
-    margin-left: -15px
-}
-
-.tooltipped-nw:after {
-    margin-right: -15px
-}
-
-.tooltipped-s:after,.tooltipped-n:after {
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%)
-}
-
-.tooltipped-w:after {
-    right: 100%;
-    bottom: 50%;
-    margin-right: 5px;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%)
-}
-
-.tooltipped-w:before {
-    top: 50%;
-    bottom: 50%;
-    left: -5px;
-    margin-top: -5px;
-    border-left-color: rgba(0,0,0,0.8)
-}
-
-.tooltipped-e:after {
-    bottom: 50%;
-    left: 100%;
-    margin-left: 5px;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%)
-}
-
-.tooltipped-e:before {
-    top: 50%;
-    right: -5px;
-    bottom: 50%;
-    margin-top: -5px;
-    border-right-color: rgba(0,0,0,0.8)
-}
-
-.tooltipped-multiline:after {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 250px;
-    word-break: break-word;
-    word-wrap: normal;
-    white-space: pre-line;
-    border-collapse: separate
-}
-
-.tooltipped-multiline.tooltipped-s:after,.tooltipped-multiline.tooltipped-n:after {
-    right: auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%)
-}
-/* End Copy Code and Tooltips */
-
 /*Responsive styles*/
 @media (max-width: 768px) {
 
@@ -685,7 +339,6 @@ pre .copy-btn {
     #close-button {
         display: block;
         margin-right: 6px;
-        /*font-size: 30px;*/
         color: #fff;
         text-align: right !important;
     }
@@ -698,22 +351,11 @@ pre .copy-btn {
     /*sidebar*/
     #sidebar {
         display: none;
-        /*height: auto;
-        overflow: hidden;
-        position: absolute;
-        width: 100%;
-        z-index: 1001;*/
 
     }
     .show-sidebar {
         z-index: 1003 !important;
         display: block !important;
-        /*-webkit-transition: all 0.9s ease;
-        -moz-transition: all 0.9s ease;
-        -o-transition: all 0.9s ease;
-        -ms-transition: all 0.9s ease;
-        transition: all 0.9s ease;*/
-        /*height: 100% !important;*/
     }
 
     .show-sidebar-nav {
