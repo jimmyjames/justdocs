@@ -18,7 +18,7 @@ Simple surround code blocks with three back-ticks, followed by the (optional) la
 
 <pre>
 ```javascript
-  $(document).ready(functin() {
+  $(document).ready(function() {
     console.log('Ready!');
   });
 ```
@@ -43,30 +43,35 @@ If you need additional languages, simply [configure and download](https://highli
 You can create tabs for code blocks by using the ``tabs`` and nested `tab` shortcodes.
 These are useful for showing code examples in multiple languages.
 
-Here's an example:
+Here's an example showing how to iterate over an array in different languages:
 
 {{% tabs %}}
-{{% tab "Groovy" %}}
-```groovy
-items.each {item ->
-  println "item is $item"
-}
-```
-{{% /tab %}}
 
 {{% tab "JavaScript" %}}
 ```javascript
-$('.some-class').each(function() {
-  console.log("item is " + this);
-});
+var items = [1, 2, 3, 4, 5]
+items.forEach(function(item) {
+  console.log('item: ' + item);
+})
 ```
 {{% /tab %}}
 
 {{% tab "Ruby" %}}
 ```ruby
-  array = [1, 2, 3, 4, 5, 6]
-  array.each { |x| puts x }
+array = [1, 2, 3, 4, 5, 6]
+array.each {
+  |x| puts x
+}
 ```  
+{{% /tab %}}
+
+{{% tab "Groovy" %}}
+```groovy
+def items = [1, 2, 3, 4, 5]
+items.each {item ->
+  println "item is $item"
+}
+```
 {{% /tab %}}
 
 {{% /tabs %}}
