@@ -27,7 +27,7 @@ Simple surround code blocks with three back-ticks, followed by the (optional) la
 Renders as:
 
 ```javascript
-  $(document).ready(functin() {
+  $(document).ready(function() {
     console.log('Ready!');
   });
 ```
@@ -65,7 +65,6 @@ items.each {item ->
 $('.some-class').each(function() {
   console.log("item is " + this);
 });
-// another line...
 ```
 {{% /tab %}}
 
