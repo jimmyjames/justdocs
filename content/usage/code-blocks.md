@@ -43,3 +43,58 @@ Coming Soon.
 PrettyDocs includes all of the standard languages supported by highlight.js, as well as Groovy, Go, and YAML.
 
 If you need additional languages, simply [configure and download](https://highlightjs.org/download/) a custom version, and replace the `themes/hugo-pretty-docs/static/js/highlight.pack.js` file with your downloaded version.
+
+## Tabbed code blocks
+
+You can create tabs for code blocks by using the ``tabs`` and nested `tab` shortcodes.
+These are useful for showing code examples in multiple languages.
+
+Here's an example:
+
+{{% tabs %}}
+{{% tab "Groovy" %}}
+```groovy
+items.each {item ->
+  println "item is $item"
+}
+```
+{{% /tab %}}
+
+{{% tab "JavaScript" %}}
+```javascript
+$('.some-class').each(function() {
+  console.log("item is " + this);
+});
+// another line...
+```
+{{% /tab %}}
+
+{{% tab "Ruby" %}}
+```ruby
+  array = [1, 2, 3, 4, 5, 6]
+  array.each { |x| puts x }
+```  
+{{% /tab %}}
+
+{{% /tabs %}}
+
+To use, simply use the `tabs` shortcode with nested `tabs`.
+Note that each tab should specify a title for the tab.
+
+```go
+{{%/* tabs */%}}
+{{%/* tab "Groovy" */%}}
+ standard fenced code block here
+{{%/* /tab */%}}
+
+{{%/* tab "JavaScript" */%}}
+ standard fenced code block here
+// another line...
+{{%/* /tab */%}}
+
+{{%/* tab "Ruby" */%}}
+ standard fenced code block here
+{{%/* /tab */%}}
+
+{{%/* /tabs */%}}
+```
