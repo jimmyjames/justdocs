@@ -1,7 +1,7 @@
 ---
 date: 2016-11-26T20:29:33-06:00
 title: Code Blocks
-tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell. PrettyDocs features beautiful code formatting and syntax highlighting.<br/>Functionality is key too - it also allows for copying code blocks to the user's clipboard.
+tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell. PrettyDocs features beautiful code formatting and syntax highlighting.<br/>It also supports tabbed code blocks for showing tasks in different langauges.
 menu:
   main:
     parent: usage
@@ -31,12 +31,6 @@ Renders as:
     console.log('Ready!');
   });
 ```
-
-## Copy code blocks
-
-{{% callout info %}}
-Coming Soon.
-{{% /callout %}}
 
 ## Supported languages
 
@@ -88,7 +82,6 @@ Note that each tab should specify a title for the tab.
 
 {{%/* tab "JavaScript" */%}}
  standard fenced code block here
-// another line...
 {{%/* /tab */%}}
 
 {{%/* tab "Ruby" */%}}
@@ -97,3 +90,9 @@ Note that each tab should specify a title for the tab.
 
 {{%/* /tabs */%}}
 ```
+
+## Copy code blocks
+
+{{% callout info %}}
+Coming Soon.
+{{% /callout %}}

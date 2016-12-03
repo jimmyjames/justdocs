@@ -9,3 +9,13 @@ weight: 15
 prev: /getting-started
 next: /usage/tagline
 ---
+
+```
+  .
+  └─ content
+      └─ getting-started
+      |   └─ index.md          // <- http://yoursite.com/getting-started/
+      ├─ usage
+      |   ├─ organization.md   // <- http://yoursite.com/usage/organization/
+      |   ├─ tagline.md        // <- http://yoursite.com/usage/tagline
+```
