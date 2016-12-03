@@ -297,7 +297,7 @@ pre {
 
 #TableOfContents > ul > li > ul > li {
   margin-bottom: 5px;
-  border-left: 2px solid transparent;
+  /*border-left: 2px solid transparent;*/
 }
 
 #TableOfContents a {
@@ -306,17 +306,42 @@ pre {
 
 #TableOfContents li.active {
   font-weight: 600;
-  -webkit-transition: all 0.2s ease;
+  /*-webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  border-left: 2px solid lightblue;
+  border-left: 2px solid lightblue;*/
+}
+
+#TableOfContents > ul > li > ul > li > a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+#TableOfContents > ul > li > ul > li > a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	/*transition: width .3s ease, background-color .5s ease;*/
+  transition: all 250ms ease 0s;
+}
+#TableOfContents > ul > li > ul > li > a:hover:after,
+#TableOfContents > ul > li > ul > li.active > a:after {
+	width: 100%;
+	background: #4285F4;
 }
 
 #TableOfContents a {
   text-decoration: none;
   display: block;
+}
+
+#toc-nav {
+  margin-left: -30px; /* todo why? */
 }
 /* end table of contents */
 
