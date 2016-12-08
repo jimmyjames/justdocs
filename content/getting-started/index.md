@@ -1,7 +1,7 @@
 ---
 date: 2016-11-25T08:54:46-06:00
 title: Getting Started
-tagline: Start writing with PrettyDocs.
+tagline: Start writing with JustDocs.
 next: /usage/organization
 prev: /home/
 weight: 7

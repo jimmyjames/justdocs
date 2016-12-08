@@ -1,7 +1,7 @@
 ---
 date: 2016-11-26T20:29:33-06:00
 title: Code Blocks
-tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell. PrettyDocs features beautiful code formatting and syntax highlighting.<br/>It also supports tabbed code blocks for showing tasks in different langauges.
+tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell. JustDocs features beautiful code formatting and syntax highlighting.<br/>It also supports tabbed code blocks for showing tasks in different langauges.
 menu:
   main:
     parent: usage
@@ -10,7 +10,7 @@ prev: /usage/tagline
 next: /usage/toc
 ---
 
-PrettyDocs uses [highlight.js](https://highlightjs.org/) and Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) to show code examples.
+JustDocs uses [highlight.js](https://highlightjs.org/) and Markdown [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/) to show code examples.
 
 ## Usage
 
@@ -34,7 +34,7 @@ Renders as:
 
 ## Supported languages
 
-PrettyDocs includes all of the standard languages supported by highlight.js, as well as Groovy, Go, and YAML.
+JustDocs includes all of the standard languages supported by highlight.js, as well as Groovy, Go, and YAML.
 
 If you need additional languages, simply [configure and download](https://highlightjs.org/download/) a custom version, and replace the `themes/hugo-pretty-docs/static/js/highlight.pack.js` file with your downloaded version.
 

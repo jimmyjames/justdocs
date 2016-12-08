@@ -1,6 +1,6 @@
 ---
 date: 2016-11-26T08:51:08-06:00
-title: PrettyDocs
+title: JustDocs
 tagline: Making beautiful docs easy, and free.
 weight: 5
 next: /getting-started/index
