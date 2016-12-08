@@ -71,6 +71,7 @@ def items = [1, 2, 3, 4, 5]
 items.each {item ->
   println "item is $item"
 }
+println "extra line"
 ```
 {{% /tab %}}
 
@@ -96,6 +97,27 @@ Note that each tab should specify a title for the tab.
 {{%/* /tabs */%}}
 ```
 
+{{% tabs %}}
+{{% tab "Tab 1" %}}
+```groovy
+println 'hi'
+```
+{{% /tab %}}
+{{% tab "Tab 2"%}}
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+{{% /tab %}}
+{{% /tabs %}}
 ## Copy code blocks
 
 {{% callout info %}}

@@ -10,8 +10,6 @@ prev: /usage/toc
 next: /contributing/index
 ---
 
-## Callout Shortcode
-
 Bring attention to important information in your docs by using one of PrettyDocs built-in [shortcodes](https://gohugo.io/extras/shortcodes/).
 
 ## Info
