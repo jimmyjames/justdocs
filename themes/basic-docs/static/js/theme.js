@@ -195,19 +195,14 @@ var DocsTheme = {
         ;
       });
 
-      // $('.anchor').click(function(evt) {
-      //     var url = $(this).attr('data-clipboard-text');
-      //     window.location = url;
-      // });
-
       $(".anchor").on('mouseleave', function(e) {
-        $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-nw');
+        $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-n');
       });
 
       clip.on('success', function(e) {
           e.clearSelection();
           $(e.trigger).attr('aria-label', 'Link copied to clipboard!')
-            .addClass('tooltipped tooltipped-nw');
+            .addClass('tooltipped tooltipped-n');
       });
     },
 

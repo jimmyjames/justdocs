@@ -5,8 +5,11 @@ theme = "basic-docs"
 MetaDataFormat = "yaml"
 
 [params]
-    param1 = "foo"
-    param2 = "bar"
+    # supported values: "monokai", "github"
+    codeTheme = "github"
+
+    # todo
+    copyCode = true
 
 [[menu.main]]
     name = "Docs Home"
