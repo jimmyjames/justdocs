@@ -1,7 +1,7 @@
 ---
 date: 2016-11-26T20:29:33-06:00
 title: Code Blocks
-tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell. JustDocs features beautiful code formatting and syntax highlighting.<br/>It also supports tabbed code blocks for showing tasks in different langauges.
+tagline: <i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell.<br/>JustDocs features beautiful code formatting and syntax highlighting. It also supports tabbed code blocks for showing tasks in different langauges, and the ability to copy code blocks to the clipboard.
 menu:
   main:
     parent: usage
@@ -14,7 +14,7 @@ JustDocs uses [highlight.js](https://highlightjs.org/) and Markdown [fenced code
 
 ## Usage
 
-Simple surround code blocks with three back-ticks, followed by the (optional) language:
+Simply surround code blocks with three back-ticks, followed by the (optional) language:
 
 <pre>
 ```javascript
@@ -118,8 +118,9 @@ println 'hi'
 ```
 {{% /tab %}}
 {{% /tabs %}}
+
 ## Copy code blocks
 
-{{% callout info %}}
-Coming Soon.
-{{% /callout %}}
+As seen in the examples above, the contents of every code block can be copied to the reader's clipboard.
+When reading developer documentation, code samples may serve as a jumping-off point, or even as a solution to a specific problem.
+Instead of having to manually select and copy the code, readers can just click the Copy button!

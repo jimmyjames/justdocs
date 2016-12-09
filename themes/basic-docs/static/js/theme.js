@@ -4,6 +4,9 @@ var DocsTheme = {
     this.initSidebar();
     this.initScrollspy();
     this.initTabbedBlocks();
+    this.initToc();
+    this.initCopyCode();
+    this.initCopyAnchors();
   },
 
   initSidebar: function() {
@@ -146,7 +149,40 @@ var DocsTheme = {
       });
     },
 
-    initClippy: function() {
+    initCopyCode: function() {
+
+      $('pre code').each(function() {
+        var code = $(this);
+        code.after('<span class="copy-to-clipboard">Copy</span>');
+        code.on('mouseenter', function() {
+          var copyBlock = $(this).next('.copy-to-clipboard');
+          copyBlock.addClass('copy-active');
+        });
+        code.on('mouseleave', function() {
+          var copyBlock = $(this).next('.copy-to-clipboard');
+          copyBlock.removeClass('copy-active');
+          copyBlock.html("Copy");
+        });
+      });
+
+      var text, clip = new Clipboard('.copy-to-clipboard', {
+        text: function(trigger) {
+          return $(trigger).prev('code').text();
+        }
+      });
+
+      clip.on('success', function(e) {
+        e.clearSelection();
+        console.log("copied!");
+        $(e.trigger).html("Copied");
+      });
+
+      clip.on('error', function(e) {
+        console.log("error: " + e);
+      });
+    },
+
+    initCopyAnchors: function() {
       // todo - add for sub-headers, add tooltips
       var text, clip = new Clipboard('.anchor');
       $("h2").append(function(index, html){
@@ -159,19 +195,26 @@ var DocsTheme = {
         ;
       });
 
-      $('.anchor').click(function(evt) {
-          var url = $(this).attr('data-clipboard-text');
-          window.location = url;
-      });
+      // $('.anchor').click(function(evt) {
+      //     var url = $(this).attr('data-clipboard-text');
+      //     window.location = url;
+      // });
 
       $(".anchor").on('mouseleave', function(e) {
-        $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-sw');
+        $(this).attr('aria-label', null).removeClass('tooltipped tooltipped-nw');
       });
 
       clip.on('success', function(e) {
           e.clearSelection();
-          $(e.trigger).attr('aria-label', 'Link copied to clipboard!').addClass('tooltipped tooltipped-sw');
+          $(e.trigger).attr('aria-label', 'Link copied to clipboard!')
+            .addClass('tooltipped tooltipped-nw');
       });
+    },
+
+    initToc: function() {
+      // Hugo gives back a stupidly structured nav structure :shrug:
+      var toc = $('#TableOfContents > ul > li > ul');
+      toc.prepend('<li class="toc-label">Contents</li>')
     }
 };
 

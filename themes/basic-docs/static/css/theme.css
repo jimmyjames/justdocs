@@ -81,6 +81,9 @@ ul.sidebar-nav {
 
 .toc-label {
     text-transform: uppercase;
+    font-size: smaller;
+    font-weight: 500;
+    color: #808080;
 }
 
 /* toc highlight for active menu */
@@ -136,7 +139,7 @@ ul.sidebar-menu li ul.sub li a {
 }
 
 ul.sidebar-menu li ul.sub li a:hover {
-    font-weight: 400;
+    font-weight: 300;
     color: #f2f2f2;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -216,9 +219,7 @@ ul.sidebar-menu li a i {
   font-size: 0.5em;
   cursor:pointer;
   visibility:hidden;
-  margin-left: 5px;
-  position: absolute;
-  margin-top:10px;
+  vertical-align: middle;
 }
 
 h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
@@ -260,6 +261,7 @@ h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover
 pre {
   /* bootstrap adds its own code styles */
   padding: 0px;
+  position: relative;
 }
 
 /** callout **/
@@ -331,7 +333,7 @@ pre {
 #TableOfContents > ul > li > ul > li > a {
 	display: inline-block;
 	position: relative;
-	padding-bottom: 3px;
+	padding-bottom: 1px;
 }
 #TableOfContents > ul > li > ul > li > a:after {
 	content: '';
@@ -351,6 +353,7 @@ pre {
 
 #TableOfContents a {
   text-decoration: none;
+  color: #1a2027;
   display: block;
 }
 
@@ -416,6 +419,46 @@ pre {
   margin-bottom: 10px;
 }
 /* end tabbed code blocks */
+
+pre .copy-to-clipboard {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #4d5257;
+    /*background-color: #ffffff;
+    color: black;*/
+    color: #ccc;
+    border-radius: 2px;
+    width: 80px;
+    height: 30px;
+    /* vertical-align: middle; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* align-content: center; */
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+    font-size: 14px;
+    opacity: 0.25
+}
+
+.copy-active, pre .copy-to-clipboard:hover  {
+  /* todo this isn't right... */
+  opacity: 1 !important;
+}
+
+.copy-to-clipboard:hover {
+  cursor: pointer;
+}
+/*code + .copy-to-clipboard {
+    margin-left: -1px;
+    border-left: 0 !important;
+    font-size: inherit !important;
+    vertical-align: middle;
+    height: 21px;
+    top: 0;
+    margin-left: -1px;
+}*/
 
 /* tooltips */
 .tooltipped {
