@@ -6,7 +6,7 @@ MetaDataFormat = "yaml"
 
 [params]
     # supported values: "monokai", "github"
-    codeTheme = "github"
+    codeTheme = "monokai"
 
     # todo
     copyCode = true
