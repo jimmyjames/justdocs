@@ -174,7 +174,7 @@ var DocsTheme = {
       clip.on('success', function(e) {
         e.clearSelection();
         console.log("copied!");
-        $(e.trigger).html("Copied");
+        $(e.trigger).html("Copied!");
       });
 
       clip.on('error', function(e) {
