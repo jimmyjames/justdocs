@@ -1,0 +1,41 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "My New Hugo Site"
+languageCode = "en-us"
+theme = "hugo-just-docs-theme"
+MetaDataFormat = "yaml"
+
+[params]
+    # supported values: "monokai", "github"
+    codeTheme = "monokai"
+
+    # todo
+    copyCode = true
+
+[[menu.main]]
+    name = "Docs Home"
+    identifier = "docs home"
+    pre = "<i class='fa fa-home'></i>"
+    url = "/home"
+    weight = -220
+[[menu.main]]
+    name = "Getting Started"
+    identifier = "getting started"
+    url = "/getting-started/"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -200
+[[menu.main]]
+    name = "Usage"
+    identifier = "usage"
+    pre = "<i class='fa fa-book'></i>"
+    weight = -180
+[[menu.main]]
+    name = "Contributing"
+    identifier = "contributing"
+    pre = "<i class='fa fa-pencil'></i>"
+    url = "/contributing/"
+    weight = -160
+[[menu.main]]
+  name="AsciiDoc Test"
+  identifier = "asciidoc"
+  url = "/formats/"
+  weight = -150
