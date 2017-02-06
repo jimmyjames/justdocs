@@ -24,6 +24,18 @@
 &lt;p&gt;Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.&lt;/p&gt;
 
+&lt;h2 id=&#34;create-a-new-site&#34;&gt;Create a new site&lt;/h2&gt;
+
+&lt;p&gt;Create a new Hugo site for your project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo new site name-of-your-site
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Change directories to the new site:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd name-of-your-site
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;install-the-justdocs-theme&#34;&gt;Install the JustDocs theme&lt;/h2&gt;
 
 &lt;p&gt;Clone the GitHub JustDocs theme repository:&lt;/p&gt;
@@ -50,7 +62,11 @@ MetaDataFormat = &amp;quot;yaml&amp;quot;
 
 &lt;p&gt;Open &lt;code&gt;config.toml&lt;/code&gt; and add the following:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+    # supported values: &amp;quot;monokai&amp;quot;, &amp;quot;github&amp;quot;
+    codeTheme = &amp;quot;monokai&amp;quot;
+
+[[menu.main]]
     name = &amp;quot;Docs Home&amp;quot;
     identifier = &amp;quot;docs home&amp;quot;
     pre = &amp;quot;&amp;lt;i class=&#39;fa fa-home&#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;
@@ -66,7 +82,6 @@ MetaDataFormat = &amp;quot;yaml&amp;quot;
 title: My Title
 tagline: This is a tagline, where you can provide summary/intro text for your readers.
 weight: 5
-next: /getting-started/index
 ---
 
 ## Step 1

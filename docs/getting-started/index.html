@@ -144,6 +144,18 @@
 <p>Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.</p>
 
+<h2 id="create-a-new-site">Create a new site</h2>
+
+<p>Create a new Hugo site for your project:</p>
+
+<pre><code class="language-bash">hugo new site name-of-your-site
+</code></pre>
+
+<p>Change directories to the new site:</p>
+
+<pre><code class="language-bash">cd name-of-your-site
+</code></pre>
+
 <h2 id="install-the-justdocs-theme">Install the JustDocs theme</h2>
 
 <p>Clone the GitHub JustDocs theme repository:</p>
@@ -170,7 +182,11 @@ MetaDataFormat = &quot;yaml&quot;
 
 <p>Open <code>config.toml</code> and add the following:</p>
 
-<pre><code class="language-toml">[[menu.main]]
+<pre><code class="language-toml">[params]
+    # supported values: &quot;monokai&quot;, &quot;github&quot;
+    codeTheme = &quot;monokai&quot;
+
+[[menu.main]]
     name = &quot;Docs Home&quot;
     identifier = &quot;docs home&quot;
     pre = &quot;&lt;i class='fa fa-home'&gt;&lt;/i&gt;&quot;
@@ -186,7 +202,6 @@ MetaDataFormat = &quot;yaml&quot;
 title: My Title
 tagline: This is a tagline, where you can provide summary/intro text for your readers.
 weight: 5
-next: /getting-started/index
 ---
 
 ## Step 1
@@ -299,6 +314,7 @@ Check them out under the &ldquo;Tutorials&rdquo; section in the docs.</p>
 <li>
 <ul>
 <li><a href="#install-hugo">Install Hugo</a></li>
+<li><a href="#create-a-new-site">Create a new site</a></li>
 <li><a href="#install-the-justdocs-theme">Install the JustDocs theme</a></li>
 <li><a href="#create-a-new-document">Create a new document</a></li>
 <li><a href="#add-page-to-menu">Add page to menu</a></li>
