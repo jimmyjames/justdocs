@@ -137,52 +137,21 @@
                 
                 
 
-<p>Hugo supports a feature called <a href="https://gohugo.io/extras/shortcodes/">shortcodes</a>, which allow for adding content that is not simple Markdown text.</p>
+<h2 id="google-analytics">Google analytics</h2>
 
-<p>Hugo ships with several shortcodes, and custom ones can be created fairly easy.
-For example, the tagline, tabbed code blocks, and callouts are all custom shortcodes defined in the JustDocs theme.</p>
+<p>Simply add your analytics tracking number to <code>config.toml</code>:</p>
 
-<h2 id="embedding-videos">Embedding videos</h2>
-
-<p>Hugo has both a YouTube and Vimeo shortcode to allow for embedding videos right on your page.</p>
-
-<p>Just grabe the ID of the video, and use it like this:</p>
-
-<pre><code>{{&lt; youtube w7Ft2ymGmfc &gt;}}
+<pre><code class="language-toml">googleAnalytics = &quot;UA-XXXXXXXX-X&quot;
 </code></pre>
 
-<p>The above results in:</p>
+<h2 id="shortcodes">Shortcodes</h2>
 
+<p>Hugo supports a powerful feature called Shortcodes, which allow for adding content that is not simple Markdown text.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
- </div>
+<p>Check out the <a href="https://gohugo.io/extras/shortcodes/">documentation</a>, and expirement with embedding videos, twitter feeds, images and figures, GitHub gists, etc.</p>
 
-
-<h2 id="embedding-gists">Embedding gists</h2>
-
-<p>If you have source code stored in GitHub gists, you can use the gist shortcode to easily pull that right into your docs.</p>
-
-<pre><code><script src="//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js"></script>
-</code></pre>
-
-<script src="//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js"></script>
-
-<h2 id="usage">Usage</h2>
-
-<p>You can provide an optional <code>tagline</code> in the front matter.
-This will render below the document title.
-You can use HTML in the <code>tagline</code> value as well (useful for line breaks, icons, or text emphasis like <code>&lt;strong&gt;</code>).</p>
-
-<p>Yaml example:</p>
-
-<pre><code class="language-yaml">title: Tagline
-tagline: &lt;strong&gt;Call to Action.&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Every page features an optional Call to Action to give readers a brief summary of what they will learn, and why they should care.
-menu:
-  main:
-    parent: content
-weight: 20
-</code></pre>
+<p>Even better, Hugo makes adding your own shortcodes easy - it&rsquo;s just HTML/CSS/JavaScript.
+This theme uses custom Shortcodes for the tabbed code blocks, tagline, and callouts.</p>
 
                 
   <div class="bottom-nav">
@@ -223,9 +192,8 @@ weight: 20
 <ul>
 <li>
 <ul>
-<li><a href="#embedding-videos">Embedding videos</a></li>
-<li><a href="#embedding-gists">Embedding gists</a></li>
-<li><a href="#usage">Usage</a></li>
+<li><a href="#google-analytics">Google analytics</a></li>
+<li><a href="#shortcodes">Shortcodes</a></li>
 </ul></li>
 </ul>
 </nav>

@@ -630,52 +630,21 @@ Something bad will probably happen if you do this.
       <guid>https://jimmyjames.github.io/justdocs/usage/other/</guid>
       <description>
 
-&lt;p&gt;Hugo supports a feature called &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;, which allow for adding content that is not simple Markdown text.&lt;/p&gt;
+&lt;h2 id=&#34;google-analytics&#34;&gt;Google analytics&lt;/h2&gt;
 
-&lt;p&gt;Hugo ships with several shortcodes, and custom ones can be created fairly easy.
-For example, the tagline, tabbed code blocks, and callouts are all custom shortcodes defined in the JustDocs theme.&lt;/p&gt;
+&lt;p&gt;Simply add your analytics tracking number to &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
 
-&lt;h2 id=&#34;embedding-videos&#34;&gt;Embedding videos&lt;/h2&gt;
-
-&lt;p&gt;Hugo has both a YouTube and Vimeo shortcode to allow for embedding videos right on your page.&lt;/p&gt;
-
-&lt;p&gt;Just grabe the ID of the video, and use it like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;The above results in:&lt;/p&gt;
+&lt;h2 id=&#34;shortcodes&#34;&gt;Shortcodes&lt;/h2&gt;
 
+&lt;p&gt;Hugo supports a powerful feature called Shortcodes, which allow for adding content that is not simple Markdown text.&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//www.youtube.com/embed/w7Ft2ymGmfc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
- &lt;/div&gt;
+&lt;p&gt;Check out the &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;documentation&lt;/a&gt;, and expirement with embedding videos, twitter feeds, images and figures, GitHub gists, etc.&lt;/p&gt;
 
-
-&lt;h2 id=&#34;embedding-gists&#34;&gt;Embedding gists&lt;/h2&gt;
-
-&lt;p&gt;If you have source code stored in GitHub gists, you can use the gist shortcode to easily pull that right into your docs.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&lt;script src=&#34;//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js&#34;&gt;&lt;/script&gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js&#34;&gt;&lt;/script&gt;
-
-&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
-
-&lt;p&gt;You can provide an optional &lt;code&gt;tagline&lt;/code&gt; in the front matter.
-This will render below the document title.
-You can use HTML in the &lt;code&gt;tagline&lt;/code&gt; value as well (useful for line breaks, icons, or text emphasis like &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Yaml example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;title: Tagline
-tagline: &amp;lt;strong&amp;gt;Call to Action.&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Every page features an optional Call to Action to give readers a brief summary of what they will learn, and why they should care.
-menu:
-  main:
-    parent: content
-weight: 20
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Even better, Hugo makes adding your own shortcodes easy - it&amp;rsquo;s just HTML/CSS/JavaScript.
+This theme uses custom Shortcodes for the tabbed code blocks, tagline, and callouts.&lt;/p&gt;
 </description>
     </item>
     
