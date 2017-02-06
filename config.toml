@@ -1,4 +1,4 @@
-baseurl = "https://jimmyjames.github.io/justdocs/home/"
+baseurl = "https://jimmyjames.github.io/justdocs/"
 title = "Hugo JustDocs Theme"
 languageCode = "en-us"
 theme = "hugo-just-docs-theme"

@@ -2,60 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/home/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/home/</loc>
     <lastmod>2016-11-26T08:51:08-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/getting-started/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/getting-started/</loc>
     <lastmod>2016-11-25T08:54:46-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/organization/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/usage/organization/</loc>
     <lastmod>2016-11-25T10:43:41-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/tagline/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/usage/tagline/</loc>
     <lastmod>2016-11-26T20:29:18-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/code-blocks/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/usage/code-blocks/</loc>
     <lastmod>2016-11-26T20:29:33-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/toc/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/usage/toc/</loc>
     <lastmod>2016-11-26T20:29:18-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/callouts/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/usage/callouts/</loc>
     <lastmod>2016-11-26T20:29:18-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/contributing/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/contributing/</loc>
     <lastmod>2016-11-25T08:54:46-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/contributing/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/contributing/</loc>
     <lastmod>2016-11-25T08:54:46-06:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/getting-started/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/getting-started/</loc>
     <lastmod>2016-11-25T08:54:46-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/home/</loc>
-    <lastmod>2016-11-26T08:51:08-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,7 +60,13 @@
   </url>
   
   <url>
-    <loc>https://jimmyjames.github.io/justdocs/home/usage/</loc>
+    <loc>https://jimmyjames.github.io/justdocs/</loc>
+    <lastmod>2016-11-26T08:51:08-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimmyjames.github.io/justdocs/usage/</loc>
     <lastmod>2016-11-25T10:43:41-06:00</lastmod>
     <priority>0</priority>
   </url>

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Usages on Hugo JustDocs Theme</title>
-    <link>https://jimmyjames.github.io/justdocs/home/usage/index.xml</link>
+    <link>https://jimmyjames.github.io/justdocs/usage/index.xml</link>
     <description>Recent content in Usages on Hugo JustDocs Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Nov 2016 10:43:41 -0600</lastBuildDate>
-    <atom:link href="https://jimmyjames.github.io/justdocs/home/usage/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimmyjames.github.io/justdocs/usage/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Organization</title>
-      <link>https://jimmyjames.github.io/justdocs/home/usage/organization/</link>
+      <link>https://jimmyjames.github.io/justdocs/usage/organization/</link>
       <pubDate>Fri, 25 Nov 2016 10:43:41 -0600</pubDate>
       
-      <guid>https://jimmyjames.github.io/justdocs/home/usage/organization/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/usage/organization/</guid>
       <description>
 
 &lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
@@ -82,10 +82,10 @@ weight: 15
     
     <item>
       <title>Tagline</title>
-      <link>https://jimmyjames.github.io/justdocs/home/usage/tagline/</link>
+      <link>https://jimmyjames.github.io/justdocs/usage/tagline/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>https://jimmyjames.github.io/justdocs/home/usage/tagline/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/usage/tagline/</guid>
       <description>
 
 &lt;p&gt;Provide an optional Call to Action for your content by specifying a &lt;code&gt;tagline&lt;/code&gt; in your front matter.&lt;/p&gt;
@@ -110,10 +110,10 @@ weight: 20
     
     <item>
       <title>Code Blocks</title>
-      <link>https://jimmyjames.github.io/justdocs/home/usage/code-blocks/</link>
+      <link>https://jimmyjames.github.io/justdocs/usage/code-blocks/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:33 -0600</pubDate>
       
-      <guid>https://jimmyjames.github.io/justdocs/home/usage/code-blocks/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/usage/code-blocks/</guid>
       <description>
 
 &lt;p&gt;JustDocs uses &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; and Markdown &lt;a href=&#34;https://help.github.com/articles/creating-and-highlighting-code-blocks/&#34;&gt;fenced code blocks&lt;/a&gt; to show code examples.&lt;/p&gt;
@@ -222,19 +222,19 @@ If you prefer a lighter theme, just change it in your &lt;code&gt;config.toml&lt
     
     <item>
       <title>Table of Contents</title>
-      <link>https://jimmyjames.github.io/justdocs/home/usage/toc/</link>
+      <link>https://jimmyjames.github.io/justdocs/usage/toc/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>https://jimmyjames.github.io/justdocs/home/usage/toc/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/usage/toc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Callouts</title>
-      <link>https://jimmyjames.github.io/justdocs/home/usage/callouts/</link>
+      <link>https://jimmyjames.github.io/justdocs/usage/callouts/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>https://jimmyjames.github.io/justdocs/home/usage/callouts/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/usage/callouts/</guid>
       <description>
 
 &lt;p&gt;Bring attention to important information in your docs by using one of JustDocs built-in &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/p&gt;
