@@ -6,7 +6,6 @@ menu:
   main:
     parent: usage
 weight: 20
-notoc: true
 prev: /usage/organization
 next: /usage/code-blocks
 ---

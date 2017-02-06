@@ -9,3 +9,12 @@ weight: 30
 prev: /usage/code-blocks
 next: /usage/callouts
 ---
+
+## Table of contents
+
+By default, a sticky Table of Contents will be rendered on the right of the page.
+It will be updated with the currently active menu as the reader scrolls.
+
+It can be disabled on a page by specifying `notoc: true` in the frontmatter.
+
+Only the top-level section headers will be shown in the Table of Contents, and it will be hidden entirely on smaller screen sizes.
