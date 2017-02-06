@@ -24,7 +24,7 @@
 &lt;p&gt;Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.&lt;/p&gt;
 
-&lt;h2 id=&#34;install-the-justdocs-theme&#34;&gt;Install the JustDocs theme.&lt;/h2&gt;
+&lt;h2 id=&#34;install-the-justdocs-theme&#34;&gt;Install the JustDocs theme&lt;/h2&gt;
 
 &lt;p&gt;Clone the GitHub JustDocs theme repository:&lt;/p&gt;
 
@@ -39,19 +39,16 @@ You may wish to specify a metadata format of &lt;code&gt;yaml&lt;/code&gt;, as t
 MetaDataFormat = &amp;quot;yaml&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;start-writing&#34;&gt;Start writing&lt;/h2&gt;
+&lt;h2 id=&#34;create-a-new-document&#34;&gt;Create a new document&lt;/h2&gt;
 
 &lt;p&gt;Let&amp;rsquo;s add our first page to our docs:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Create a new document:&lt;/li&gt;
-&lt;/ol&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;hugo new home/index.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;To have it appear in the navigation, we need to add it to the menu in &lt;code&gt;config.toml&lt;/code&gt;.
-Add the following in your &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;add-page-to-menu&#34;&gt;Add page to menu&lt;/h2&gt;
+
+&lt;p&gt;Open &lt;code&gt;config.toml&lt;/code&gt; and add the following:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
     name = &amp;quot;Docs Home&amp;quot;
@@ -61,32 +58,9 @@ Add the following in your &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
     weight = -220
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Add some content to &lt;code&gt;home/index.md&lt;/code&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;add-some-content&#34;&gt;Add some content&lt;/h2&gt;
 
-&lt;div class=&#34;callout info&#34;&gt;
-  &lt;table&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class=&#34;callout-icon&#34;&gt;
-          
-            
-              &lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;
-            
-          
-        &lt;/td&gt;
-        &lt;td class=&#34;callout-content&#34;&gt;
-          &lt;p&gt;Hugo supports content written in Markdown, Asciidoc, and reStructuredText.&lt;/p&gt;
-
-&lt;p&gt;Some features, such as the Table of Contents, do not currently work with non-Markdown formats.&lt;/p&gt;
-
-&lt;p&gt;For the most support and features, it&amp;rsquo;s recommended you use Markdown to write your content.&lt;/p&gt;
-
-        &lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;
-
+&lt;p&gt;Open &lt;code&gt;home/index.md&lt;/code&gt; in your editor, and paste in the following:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;---
 title: My Title
@@ -116,6 +90,31 @@ Morbi aliquet, erat eget sollicitudin mollis, nisl turpis porta urna, eget viver
 Cras quam orci, consectetur nec mi sed, consequat egestas elit. Aliquam id turpis massa. In efficitur elit felis, id tristique tellus finibus vel. Morbi mollis ullamcorper condimentum. Proin porta nibh non mi hendrerit sodales. Praesent neque nulla, tempus quis interdum ac, dictum vitae ligula. Nulla at facilisis arcu. Integer vitae tempus sem. Aliquam ut viverra nisl. Mauris malesuada ipsum eget ligula lacinia, quis convallis lacus commodo. In id cursus elit, non rhoncus justo.
 
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;callout info&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;Hugo supports content written in Markdown, Asciidoc, and reStructuredText.&lt;/p&gt;
+
+&lt;p&gt;Some features, such as the Table of Contents, do not currently work with non-Markdown formats.&lt;/p&gt;
+
+&lt;p&gt;For the most support and features, it&amp;rsquo;s recommended you use Markdown to write your content.&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
 
 &lt;h2 id=&#34;preview-the-site&#34;&gt;Preview the site&lt;/h2&gt;
 

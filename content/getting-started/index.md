@@ -14,7 +14,7 @@ If you haven't yet, install Hugo and become familiar with it by following [these
 Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.
 
-## Install the JustDocs theme.
+## Install the JustDocs theme
 
 Clone the GitHub JustDocs theme repository:
 
@@ -31,18 +31,17 @@ theme = "hugo-just-docs-theme"
 MetaDataFormat = "yaml"
 ```
 
-## Start writing
+## Create a new document
 
 Let's add our first page to our docs:
-
-1. Create a new document:
 
 ```bash
 hugo new home/index.md
 ```
 
-To have it appear in the navigation, we need to add it to the menu in `config.toml`.
-Add the following in your `config.toml`:
+## Add page to menu
+
+Open `config.toml` and add the following:
 
 ```toml
 [[menu.main]]
@@ -53,15 +52,9 @@ Add the following in your `config.toml`:
     weight = -220
 ```
 
-Add some content to `home/index.md`:
+## Add some content
 
-{{% callout info %}}
-Hugo supports content written in Markdown, Asciidoc, and reStructuredText.
-
-Some features, such as the Table of Contents, do not currently work with non-Markdown formats.
-
-For the most support and features, it's recommended you use Markdown to write your content.
-{{% /callout %}}
+Open `home/index.md` in your editor, and paste in the following:
 
 ```md
 ---
@@ -92,6 +85,14 @@ Morbi aliquet, erat eget sollicitudin mollis, nisl turpis porta urna, eget viver
 Cras quam orci, consectetur nec mi sed, consequat egestas elit. Aliquam id turpis massa. In efficitur elit felis, id tristique tellus finibus vel. Morbi mollis ullamcorper condimentum. Proin porta nibh non mi hendrerit sodales. Praesent neque nulla, tempus quis interdum ac, dictum vitae ligula. Nulla at facilisis arcu. Integer vitae tempus sem. Aliquam ut viverra nisl. Mauris malesuada ipsum eget ligula lacinia, quis convallis lacus commodo. In id cursus elit, non rhoncus justo.
 
 ```
+
+{{% callout info %}}
+Hugo supports content written in Markdown, Asciidoc, and reStructuredText.
+
+Some features, such as the Table of Contents, do not currently work with non-Markdown formats.
+
+For the most support and features, it's recommended you use Markdown to write your content.
+{{% /callout %}}
 
 ## Preview the site
 

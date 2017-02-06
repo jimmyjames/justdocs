@@ -144,7 +144,7 @@
 <p>Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.</p>
 
-<h2 id="install-the-justdocs-theme">Install the JustDocs theme.</h2>
+<h2 id="install-the-justdocs-theme">Install the JustDocs theme</h2>
 
 <p>Clone the GitHub JustDocs theme repository:</p>
 
@@ -159,19 +159,16 @@ You may wish to specify a metadata format of <code>yaml</code>, as the example p
 MetaDataFormat = &quot;yaml&quot;
 </code></pre>
 
-<h2 id="start-writing">Start writing</h2>
+<h2 id="create-a-new-document">Create a new document</h2>
 
 <p>Let&rsquo;s add our first page to our docs:</p>
-
-<ol>
-<li>Create a new document:</li>
-</ol>
 
 <pre><code class="language-bash">hugo new home/index.md
 </code></pre>
 
-<p>To have it appear in the navigation, we need to add it to the menu in <code>config.toml</code>.
-Add the following in your <code>config.toml</code>:</p>
+<h2 id="add-page-to-menu">Add page to menu</h2>
+
+<p>Open <code>config.toml</code> and add the following:</p>
 
 <pre><code class="language-toml">[[menu.main]]
     name = &quot;Docs Home&quot;
@@ -181,32 +178,9 @@ Add the following in your <code>config.toml</code>:</p>
     weight = -220
 </code></pre>
 
-<p>Add some content to <code>home/index.md</code>:</p>
+<h2 id="add-some-content">Add some content</h2>
 
-<div class="callout info">
-  <table>
-    <tbody>
-      <tr>
-        <td class="callout-icon">
-          
-            
-              <i class="fa fa-info"></i>
-            
-          
-        </td>
-        <td class="callout-content">
-          <p>Hugo supports content written in Markdown, Asciidoc, and reStructuredText.</p>
-
-<p>Some features, such as the Table of Contents, do not currently work with non-Markdown formats.</p>
-
-<p>For the most support and features, it&rsquo;s recommended you use Markdown to write your content.</p>
-
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+<p>Open <code>home/index.md</code> in your editor, and paste in the following:</p>
 
 <pre><code class="language-md">---
 title: My Title
@@ -236,6 +210,31 @@ Morbi aliquet, erat eget sollicitudin mollis, nisl turpis porta urna, eget viver
 Cras quam orci, consectetur nec mi sed, consequat egestas elit. Aliquam id turpis massa. In efficitur elit felis, id tristique tellus finibus vel. Morbi mollis ullamcorper condimentum. Proin porta nibh non mi hendrerit sodales. Praesent neque nulla, tempus quis interdum ac, dictum vitae ligula. Nulla at facilisis arcu. Integer vitae tempus sem. Aliquam ut viverra nisl. Mauris malesuada ipsum eget ligula lacinia, quis convallis lacus commodo. In id cursus elit, non rhoncus justo.
 
 </code></pre>
+
+<div class="callout info">
+  <table>
+    <tbody>
+      <tr>
+        <td class="callout-icon">
+          
+            
+              <i class="fa fa-info"></i>
+            
+          
+        </td>
+        <td class="callout-content">
+          <p>Hugo supports content written in Markdown, Asciidoc, and reStructuredText.</p>
+
+<p>Some features, such as the Table of Contents, do not currently work with non-Markdown formats.</p>
+
+<p>For the most support and features, it&rsquo;s recommended you use Markdown to write your content.</p>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 <h2 id="preview-the-site">Preview the site</h2>
 
@@ -300,8 +299,10 @@ Check them out under the &ldquo;Tutorials&rdquo; section in the docs.</p>
 <li>
 <ul>
 <li><a href="#install-hugo">Install Hugo</a></li>
-<li><a href="#install-the-justdocs-theme">Install the JustDocs theme.</a></li>
-<li><a href="#start-writing">Start writing</a></li>
+<li><a href="#install-the-justdocs-theme">Install the JustDocs theme</a></li>
+<li><a href="#create-a-new-document">Create a new document</a></li>
+<li><a href="#add-page-to-menu">Add page to menu</a></li>
+<li><a href="#add-some-content">Add some content</a></li>
 <li><a href="#preview-the-site">Preview the site</a></li>
 <li><a href="#build-and-deploy">Build and deploy</a></li>
 </ul></li>
