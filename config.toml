@@ -4,6 +4,7 @@ languageCode = "en-us"
 theme = "hugo-just-docs-theme"
 MetaDataFormat = "yaml"
 publishDir = "docs"
+googleAnalytics = "UA-91488771-1"
 
 [params]
     # supported values: "monokai", "github"
