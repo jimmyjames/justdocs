@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usages on Hugo JustDocs Theme</title>
+    <link>http://replace-this-with-your-hugo-site.com/usage/index.xml</link>
+    <description>Recent content in Usages on Hugo JustDocs Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Nov 2016 10:43:41 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/usage/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Organization</title>
+      <link>http://replace-this-with-your-hugo-site.com/usage/organization/</link>
+      <pubDate>Fri, 25 Nov 2016 10:43:41 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/usage/organization/</guid>
+      <description>
+
+&lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
+
+&lt;p&gt;Content is created in the &lt;code&gt;/content&lt;/code&gt; directory (shocking, right?).
+A typical content layout would look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  .
+  └─ content
+      └─ getting-started
+      |   └─ index.md          // &amp;lt;- http://yoursite.com/getting-started/
+      ├─ usage
+      |   ├─ organization.md   // &amp;lt;- http://yoursite.com/usage/organization/
+      |   ├─ tagline.md        // &amp;lt;- http://yoursite.com/usage/tagline
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can create content using the &lt;code&gt;hugo new &amp;lt;directory&amp;gt;/&amp;lt;file&amp;gt;&lt;/code&gt; command, or just by creating the directories and files maually.&lt;/p&gt;
+
+&lt;h2 id=&#34;menus&#34;&gt;Menus&lt;/h2&gt;
+
+&lt;p&gt;There are two different ways to get your content to appear in the left navigation menu, depending on if the document will be a standalone page, or be contained within a top-level navigation category.&lt;/p&gt;
+
+&lt;h3 id=&#34;standalone-page&#34;&gt;Standalone page&lt;/h3&gt;
+
+&lt;p&gt;For a standalone page, all you need to do is add an entry to &lt;code&gt;config.toml&lt;/code&gt; like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+    name = &amp;quot;Docs Home&amp;quot;
+    identifier = &amp;quot;docs home&amp;quot;
+    pre = &amp;quot;&amp;lt;i class=&#39;fa fa-home&#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;
+    url = &amp;quot;/home&amp;quot;
+    weight = -220
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that the &lt;code&gt;pre&lt;/code&gt; is used to (optionally) specify a FontAwesome icon before the menu item.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;weight&lt;/code&gt; determines the order in which the item appears in the navigation.
+The navigation is ordered from lowest-to-highest, top-to-bottom.&lt;/p&gt;
+
+&lt;h3 id=&#34;menu-categories&#34;&gt;Menu categories&lt;/h3&gt;
+
+&lt;p&gt;For documents that you wish to group under a high level category (like &amp;ldquo;Usage&amp;rdquo; in this documentation), you need to specify the menu information both in the &lt;code&gt;config.toml&lt;/code&gt;, as well as in the document&amp;rsquo;s frontmatter itself.&lt;/p&gt;
+
+&lt;p&gt;Consider the &lt;code&gt;config.toml&lt;/code&gt; entry for this page.
+First, only the top-level category (&amp;ldquo;Usage&amp;rdquo; in this case) is defined in &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+    name = &amp;quot;Usage&amp;quot;
+    identifier = &amp;quot;usage&amp;quot;
+    pre = &amp;quot;&amp;lt;i class=&#39;fa fa-book&#39;&amp;gt;&amp;lt;/i&amp;gt;&amp;quot;
+    weight = -180
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, we specify the menu the document belongs to in the frontmatter itself:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;menu:
+  main:
+    parent: usage
+weight: 15
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, the weight determines the order this document appears within the &amp;ldquo;Usage&amp;rdquo; menu.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tagline</title>
+      <link>http://replace-this-with-your-hugo-site.com/usage/tagline/</link>
+      <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/usage/tagline/</guid>
+      <description>
+
+&lt;p&gt;Provide an optional Call to Action for your content by specifying a &lt;code&gt;tagline&lt;/code&gt; in your front matter.&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;You can provide an optional &lt;code&gt;tagline&lt;/code&gt; in the front matter.
+This will render below the document title.
+You can use HTML in the &lt;code&gt;tagline&lt;/code&gt; value as well (useful for line breaks, icons, or text emphasis like &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Yaml example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;title: Tagline
+tagline: &amp;lt;strong&amp;gt;Call to Action.&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Every page features an optional Call to Action to give readers a brief summary of what they will learn, and why they should care.
+menu:
+  main:
+    parent: content
+weight: 20
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Code Blocks</title>
+      <link>http://replace-this-with-your-hugo-site.com/usage/code-blocks/</link>
+      <pubDate>Sat, 26 Nov 2016 20:29:33 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/usage/code-blocks/</guid>
+      <description>
+
+&lt;p&gt;JustDocs uses &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; and Markdown &lt;a href=&#34;https://help.github.com/articles/creating-and-highlighting-code-blocks/&#34;&gt;fenced code blocks&lt;/a&gt; to show code examples.&lt;/p&gt;
+
+&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;Simply surround code blocks with three back-ticks, followed by the (optional) language:&lt;/p&gt;
+
+&lt;pre&gt;
+```javascript
+  $(document).ready(function() {
+    console.log(&#39;Ready!&#39;);
+  });
+```
+&lt;/pre&gt;
+
+&lt;p&gt;Renders as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;  $(document).ready(function() {
+    console.log(&#39;Ready!&#39;);
+  });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;supported-languages&#34;&gt;Supported languages&lt;/h2&gt;
+
+&lt;p&gt;JustDocs includes all of the standard languages supported by highlight.js, as well as Groovy, Go, and YAML.&lt;/p&gt;
+
+&lt;p&gt;If you need additional languages, simply &lt;a href=&#34;https://highlightjs.org/download/&#34;&gt;configure and download&lt;/a&gt; a custom version, and replace the &lt;code&gt;themes/hugo-pretty-docs/static/js/highlight.pack.js&lt;/code&gt; file with your downloaded version.&lt;/p&gt;
+
+&lt;h2 id=&#34;tabbed-code-blocks&#34;&gt;Tabbed code blocks&lt;/h2&gt;
+
+&lt;p&gt;You can create tabs for code blocks by using the &lt;code&gt;tabs&lt;/code&gt; and nested &lt;code&gt;tab&lt;/code&gt; shortcodes.
+These are useful for showing code examples in multiple languages.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an example showing how to iterate over an array in different languages:&lt;/p&gt;
+
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;&lt;div class=&#34;tab-pane&#34; title=&#34;JavaScript&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var items = [1, 2, 3, 4, 5]
+items.forEach(function(item) {
+  console.log(&#39;item: &#39; + item);
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;Ruby&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-ruby&#34;&gt;array = [1, 2, 3, 4, 5, 6]
+array.each {
+  |x| puts x
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;Groovy&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;def items = [1, 2, 3, 4, 5]
+items.each {item -&amp;gt;
+  println &amp;quot;item is $item&amp;quot;
+}
+println &amp;quot;extra line&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;To use, simply use the &lt;code&gt;tabs&lt;/code&gt; shortcode with nested &lt;code&gt;tabs&lt;/code&gt;.
+Note that each tab should specify a title for the tab.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{% tabs %}}
+{{% tab &amp;quot;Groovy&amp;quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% tab &amp;quot;JavaScript&amp;quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% tab &amp;quot;Ruby&amp;quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% /tabs %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;copy-code-blocks&#34;&gt;Copy code blocks&lt;/h2&gt;
+
+&lt;p&gt;As seen in the examples above, the contents of every code block can be copied to the reader&amp;rsquo;s clipboard.
+When reading developer documentation, code samples may serve as a jumping-off point, or even as a solution to a specific problem.
+Instead of having to manually select and copy the code, readers can just click the Copy button!&lt;/p&gt;
+
+&lt;h2 id=&#34;dark-or-light-theme&#34;&gt;Dark or light theme&lt;/h2&gt;
+
+&lt;p&gt;By default, JustDocs uses the dark monokai theme.
+If you prefer a lighter theme, just change it in your &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+    # supported values: &amp;quot;monokai&amp;quot;, &amp;quot;github&amp;quot;
+    codeTheme = &amp;quot;monokai&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents</title>
+      <link>http://replace-this-with-your-hugo-site.com/usage/toc/</link>
+      <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/usage/toc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Callouts</title>
+      <link>http://replace-this-with-your-hugo-site.com/usage/callouts/</link>
+      <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/usage/callouts/</guid>
+      <description>
+
+&lt;p&gt;Bring attention to important information in your docs by using one of JustDocs built-in &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;info&#34;&gt;Info&lt;/h2&gt;
+
+&lt;p&gt;Use the Info callout to call attention to some important information.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{% callout info %}}
+This is some important information.
+{{% /callout %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above renders as:&lt;/p&gt;
+
+&lt;div class=&#34;callout info&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;This is some important information.&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;tip&#34;&gt;Tip&lt;/h2&gt;
+
+&lt;p&gt;Use the Tip callout to notify the reader about some good-to-know information.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{% callout tip %}}
+This is some good-to-know, but maybe not critical information.
+{{% /callout %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above renders as:&lt;/p&gt;
+
+&lt;div class=&#34;callout tip&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-lightbulb-o&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;This is some good-to-know, but maybe not critical information.&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;warning&#34;&gt;Warning&lt;/h2&gt;
+
+&lt;p&gt;Use the Warning callout to let the reader know that if they do (or don&amp;rsquo;t do) something, something bad will probably happen.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;{{% callout warning %}}
+This is a warning.
+
+Something bad will probably happen if you do this.
+{{% /callout %}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above renders as:&lt;/p&gt;
+
+&lt;div class=&#34;callout warning&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-warning&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;This is a warning.&lt;/p&gt;
+
+&lt;p&gt;Something bad will probably happen if you do this.&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

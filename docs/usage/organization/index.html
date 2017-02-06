@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+
+  
+  <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/vendor/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500,700|Montserrat|Work+Sans:100,400" rel="stylesheet">
+
+  
+    <link href="/css/vendor/monokai-sublime.css" rel="stylesheet">
+  
+
+  <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header id="header" class="header">
+    <span class="toggle-nav">
+        <i class="fa fa-bars nav-menu"></i>
+    </span>
+    <div class="header-info">
+      <div class="github-link">
+        <a href="https://github.com/jimmyjames">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+</header>
+
+    <section class="container">
+
+      
+<aside>
+  <div id="sidebar">
+
+    <ul class="sidebar-nav sidebar-menu">
+      <li>
+        <a href="#" id="close-button">
+          <i class="fa fa-close fa-lg"></i>
+        </a>
+      </li>
+      
+      
+        
+            <li class="">
+              <a class="" href="/home">
+                  <i class='fa fa-home'></i>
+                  <span>Docs Home</span>
+              </a>
+            </li>
+        
+      
+        
+            <li class="">
+              <a class="" href="/getting-started/">
+                  <i class='fa fa-road'></i>
+                  <span>Getting Started</span>
+              </a>
+            </li>
+        
+      
+        
+          <li class="sub-menu active">
+            <a href="javascript:;">
+              <i class='fa fa-book'></i>
+              <span>Usage</span>
+              <span class="menu-arrow fa fa-angle-down"></span>
+
+            </a>
+            <ul class="sub open">
+              
+                <li  class="active">
+                  <a href="/usage/organization/">Organization</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/tagline/">Tagline</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/code-blocks/">Code Blocks</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/toc/">Table of Contents</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/callouts/">Callouts</a>
+                </li>
+              
+            </ul>
+          </li>
+          
+      
+        
+            <li class="">
+              <a class="" href="/contributing/">
+                  <i class='fa fa-pencil'></i>
+                  <span>Contributing</span>
+              </a>
+            </li>
+        
+      
+    </ul>
+  </div>
+</aside>
+
+      
+      <section id="main-content">
+
+            <div class="article-tagline">
+              <h1> Organization </h1>
+              
+              <p>Use Hugo's menu feature to build a flexible main docs site navigation.</p>
+              
+            </div>
+            <div class="article-body">
+              <div class="row">
+                
+                  <div class="main-col col-md-10 col-sm-12">
+                
+                
+
+<h2 id="layout">Layout</h2>
+
+<p>Content is created in the <code>/content</code> directory (shocking, right?).
+A typical content layout would look like this:</p>
+
+<pre><code>  .
+  └─ content
+      └─ getting-started
+      |   └─ index.md          // &lt;- http://yoursite.com/getting-started/
+      ├─ usage
+      |   ├─ organization.md   // &lt;- http://yoursite.com/usage/organization/
+      |   ├─ tagline.md        // &lt;- http://yoursite.com/usage/tagline
+</code></pre>
+
+<p>You can create content using the <code>hugo new &lt;directory&gt;/&lt;file&gt;</code> command, or just by creating the directories and files maually.</p>
+
+<h2 id="menus">Menus</h2>
+
+<p>There are two different ways to get your content to appear in the left navigation menu, depending on if the document will be a standalone page, or be contained within a top-level navigation category.</p>
+
+<h3 id="standalone-page">Standalone page</h3>
+
+<p>For a standalone page, all you need to do is add an entry to <code>config.toml</code> like this:</p>
+
+<pre><code class="language-toml">[[menu.main]]
+    name = &quot;Docs Home&quot;
+    identifier = &quot;docs home&quot;
+    pre = &quot;&lt;i class='fa fa-home'&gt;&lt;/i&gt;&quot;
+    url = &quot;/home&quot;
+    weight = -220
+</code></pre>
+
+<p>Note that the <code>pre</code> is used to (optionally) specify a FontAwesome icon before the menu item.</p>
+
+<p>The <code>weight</code> determines the order in which the item appears in the navigation.
+The navigation is ordered from lowest-to-highest, top-to-bottom.</p>
+
+<h3 id="menu-categories">Menu categories</h3>
+
+<p>For documents that you wish to group under a high level category (like &ldquo;Usage&rdquo; in this documentation), you need to specify the menu information both in the <code>config.toml</code>, as well as in the document&rsquo;s frontmatter itself.</p>
+
+<p>Consider the <code>config.toml</code> entry for this page.
+First, only the top-level category (&ldquo;Usage&rdquo; in this case) is defined in <code>config.toml</code>:</p>
+
+<pre><code class="language-toml">[[menu.main]]
+    name = &quot;Usage&quot;
+    identifier = &quot;usage&quot;
+    pre = &quot;&lt;i class='fa fa-book'&gt;&lt;/i&gt;&quot;
+    weight = -180
+</code></pre>
+
+<p>Next, we specify the menu the document belongs to in the frontmatter itself:</p>
+
+<pre><code class="language-yaml">menu:
+  main:
+    parent: usage
+weight: 15
+</code></pre>
+
+<p>Here, the weight determines the order this document appears within the &ldquo;Usage&rdquo; menu.</p>
+
+                
+  <div class="bottom-nav">
+  <nav class="nav-footer">
+    <div class="previous col-xs-6">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/getting-started/" title="http://replace-this-with-your-hugo-site.com/getting-started/">
+        <span><i class="fa fa-arrow-left"></i></span>
+        <span>Previous</span>
+        <div class="nav-title">
+          Getting Started
+        </div>
+      </a>
+      
+    </div>
+    <div class="next col-xs-6">
+      
+      <span class="pull-right">
+        <a href="http://replace-this-with-your-hugo-site.com/usage/tagline/" title="http://replace-this-with-your-hugo-site.com/usage/tagline/">
+          <span>Next</span>
+          <span><i class="fa fa-arrow-right"></i></span>
+          <div class="nav-title">
+            Tagline
+          </div>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+
+
+                  </div> 
+                  
+                    <div class="col-md-2">
+                    
+<div class="visible-md visible-lg" id="toc-nav">
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#layout">Layout</a></li>
+<li><a href="#menus">Menus</a>
+<ul>
+<li><a href="#standalone-page">Standalone page</a></li>
+<li><a href="#menu-categories">Menu categories</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+                    </div>
+                  
+              </div> 
+            </div> 
+          </section> 
+        </section> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/vendor/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="/js/vendor/clipboard.min.js"></script>
+        <script src="/js/theme.js"></script>
+              
+            </body>
+</html>

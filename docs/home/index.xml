@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Hugo JustDocs Theme</title>
+    <link>http://replace-this-with-your-hugo-site.com/home/index.xml</link>
+    <description>Recent content in Homes on Hugo JustDocs Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Nov 2016 08:51:08 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JustDocs</title>
+      <link>http://replace-this-with-your-hugo-site.com/home/</link>
+      <pubDate>Sat, 26 Nov 2016 08:51:08 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/home/</guid>
+      <description>
+
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;p&gt;JustDocs is a Hugo theme for online software documentaiton.
+It is free, open-source, simple, responsive, and customizable.&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-layout&#34;&gt;Simple layout&lt;/h2&gt;
+
+&lt;p&gt;JustDocs is content-first.&lt;/p&gt;
+
+&lt;p&gt;It uses a simple layout that allows for easiy navigation and discoverability.
+An optional Table of Contents on the right of the page shows readers where they currently are, and to easily navigate within a page.&lt;/p&gt;
+
+&lt;h2 id=&#34;responsive&#34;&gt;Responsive&lt;/h2&gt;
+
+&lt;p&gt;Developers read docs on their mobile devices, not just their oversized monitors.
+JustDocs is built with mobile-first in mind.&lt;/p&gt;
+
+&lt;h2 id=&#34;beautiful-code-blocks&#34;&gt;Beautiful code blocks&lt;/h2&gt;
+
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;&lt;div class=&#34;tab-pane&#34; title=&#34;JavaScript&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var count = [1, 2, 3, 4, 5];
+for (i = 0; i &amp;lt; count.length; i++) {
+    console.log(&amp;quot;The number is &amp;quot; + count[i]);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;Python&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;count = [1, 2, 3, 4, 5]
+for number in count:
+    print &amp;quot;The number is %d&amp;quot; % number
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;Groovy&#34;&gt;
+  &lt;pre&gt;&lt;code class=&#34;language-groovy&#34;&gt;[1, 2, 3, 4, 5].each { -&amp;gt;
+    println &amp;quot;The number is $it&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Developer documentation needs to show more than it tells.
+Code examples are key to good docs, and JustDocs features beautiful syntax highlighting with &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;, a &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/code-blocks&#34;&gt;tabbed code blocks shortcode&lt;/a&gt;, and the ability to copy code blocks to the clipboard.&lt;/p&gt;
+
+&lt;h2 id=&#34;tagline&#34;&gt;Tagline&lt;/h2&gt;
+
+&lt;p&gt;Adding a tagline to your document allows readers to quickly see what they will learn in the document, and why they should care.&lt;/p&gt;
+
+&lt;p&gt;Taglines can be added to any page by specifying it in the front matter:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;title: Tagline
+tagline: &amp;lt;strong&amp;gt;Call to Action.&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Every page features an optional Call to Action to give readers a brief summary of what they will learn, and why they should care.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;callouts&#34;&gt;Callouts&lt;/h2&gt;
+
+&lt;div class=&#34;callout info&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;This is some information you should know!&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Bring attention to certain information by using the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/callouts&#34;&gt;custom callout shortcode&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;simple-technologies&#34;&gt;Simple technologies&lt;/h2&gt;
+
+&lt;p&gt;JustDocs is a simple theme composed of HTML, JavaScript, and CSS.
+Bootstrap is used for some basic grid layout and other features.&lt;/p&gt;
+
+&lt;p&gt;You can customize these resources as you see fit, without having to learn any new frameworks - if you know HTML/CSS/JavaScript, you can customize this theme.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+
+&lt;p&gt;Why not install theme and start writing?
+Click the &amp;ldquo;Next&amp;rdquo; button below.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

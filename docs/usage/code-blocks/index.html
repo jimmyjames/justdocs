@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+
+  
+  <link href="/css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/vendor/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500,700|Montserrat|Work+Sans:100,400" rel="stylesheet">
+
+  
+    <link href="/css/vendor/monokai-sublime.css" rel="stylesheet">
+  
+
+  <link href="/css/theme.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header id="header" class="header">
+    <span class="toggle-nav">
+        <i class="fa fa-bars nav-menu"></i>
+    </span>
+    <div class="header-info">
+      <div class="github-link">
+        <a href="https://github.com/jimmyjames">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+</header>
+
+    <section class="container">
+
+      
+<aside>
+  <div id="sidebar">
+
+    <ul class="sidebar-nav sidebar-menu">
+      <li>
+        <a href="#" id="close-button">
+          <i class="fa fa-close fa-lg"></i>
+        </a>
+      </li>
+      
+      
+        
+            <li class="">
+              <a class="" href="/home">
+                  <i class='fa fa-home'></i>
+                  <span>Docs Home</span>
+              </a>
+            </li>
+        
+      
+        
+            <li class="">
+              <a class="" href="/getting-started/">
+                  <i class='fa fa-road'></i>
+                  <span>Getting Started</span>
+              </a>
+            </li>
+        
+      
+        
+          <li class="sub-menu active">
+            <a href="javascript:;">
+              <i class='fa fa-book'></i>
+              <span>Usage</span>
+              <span class="menu-arrow fa fa-angle-down"></span>
+
+            </a>
+            <ul class="sub open">
+              
+                <li >
+                  <a href="/usage/organization/">Organization</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/tagline/">Tagline</a>
+                </li>
+              
+                <li  class="active">
+                  <a href="/usage/code-blocks/">Code Blocks</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/toc/">Table of Contents</a>
+                </li>
+              
+                <li >
+                  <a href="/usage/callouts/">Callouts</a>
+                </li>
+              
+            </ul>
+          </li>
+          
+      
+        
+            <li class="">
+              <a class="" href="/contributing/">
+                  <i class='fa fa-pencil'></i>
+                  <span>Contributing</span>
+              </a>
+            </li>
+        
+      
+    </ul>
+  </div>
+</aside>
+
+      
+      <section id="main-content">
+
+            <div class="article-tagline">
+              <h1> Code Blocks </h1>
+              
+              <p><i class="fa fa-code" style="font-size:48px;margin-bottom:10px;"></i><br/>Show, don't tell.<br/>JustDocs features beautiful code formatting and syntax highlighting. It also supports tabbed code blocks for showing tasks in different langauges, and the ability to copy code blocks to the clipboard.</p>
+              
+            </div>
+            <div class="article-body">
+              <div class="row">
+                
+                  <div class="main-col col-md-10 col-sm-12">
+                
+                
+
+<p>JustDocs uses <a href="https://highlightjs.org/">highlight.js</a> and Markdown <a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">fenced code blocks</a> to show code examples.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Simply surround code blocks with three back-ticks, followed by the (optional) language:</p>
+
+<pre>
+```javascript
+  $(document).ready(function() {
+    console.log('Ready!');
+  });
+```
+</pre>
+
+<p>Renders as:</p>
+
+<pre><code class="language-javascript">  $(document).ready(function() {
+    console.log('Ready!');
+  });
+</code></pre>
+
+<h2 id="supported-languages">Supported languages</h2>
+
+<p>JustDocs includes all of the standard languages supported by highlight.js, as well as Groovy, Go, and YAML.</p>
+
+<p>If you need additional languages, simply <a href="https://highlightjs.org/download/">configure and download</a> a custom version, and replace the <code>themes/hugo-pretty-docs/static/js/highlight.pack.js</code> file with your downloaded version.</p>
+
+<h2 id="tabbed-code-blocks">Tabbed code blocks</h2>
+
+<p>You can create tabs for code blocks by using the <code>tabs</code> and nested <code>tab</code> shortcodes.
+These are useful for showing code examples in multiple languages.</p>
+
+<p>Here&rsquo;s an example showing how to iterate over an array in different languages:</p>
+
+<div class='code-tabs'>
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" title="JavaScript">
+  <pre><code class="language-javascript">var items = [1, 2, 3, 4, 5]
+items.forEach(function(item) {
+  console.log('item: ' + item);
+})
+</code></pre>
+
+</div>
+
+<div class="tab-pane" title="Ruby">
+  <pre><code class="language-ruby">array = [1, 2, 3, 4, 5, 6]
+array.each {
+  |x| puts x
+}
+</code></pre>
+
+</div>
+
+<div class="tab-pane" title="Groovy">
+  <pre><code class="language-groovy">def items = [1, 2, 3, 4, 5]
+items.each {item -&gt;
+  println &quot;item is $item&quot;
+}
+println &quot;extra line&quot;
+</code></pre>
+
+</div>
+</div>
+</div>
+
+
+<p>To use, simply use the <code>tabs</code> shortcode with nested <code>tabs</code>.
+Note that each tab should specify a title for the tab.</p>
+
+<pre><code class="language-go">{{% tabs %}}
+{{% tab &quot;Groovy&quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% tab &quot;JavaScript&quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% tab &quot;Ruby&quot; %}}
+ standard fenced code block here
+{{% /tab %}}
+
+{{% /tabs %}}
+</code></pre>
+
+<h2 id="copy-code-blocks">Copy code blocks</h2>
+
+<p>As seen in the examples above, the contents of every code block can be copied to the reader&rsquo;s clipboard.
+When reading developer documentation, code samples may serve as a jumping-off point, or even as a solution to a specific problem.
+Instead of having to manually select and copy the code, readers can just click the Copy button!</p>
+
+<h2 id="dark-or-light-theme">Dark or light theme</h2>
+
+<p>By default, JustDocs uses the dark monokai theme.
+If you prefer a lighter theme, just change it in your <code>config.toml</code>:</p>
+
+<pre><code class="language-toml">[params]
+    # supported values: &quot;monokai&quot;, &quot;github&quot;
+    codeTheme = &quot;monokai&quot;
+</code></pre>
+
+                
+  <div class="bottom-nav">
+  <nav class="nav-footer">
+    <div class="previous col-xs-6">
+      
+      <a href="http://replace-this-with-your-hugo-site.com/usage/tagline/" title="http://replace-this-with-your-hugo-site.com/usage/tagline/">
+        <span><i class="fa fa-arrow-left"></i></span>
+        <span>Previous</span>
+        <div class="nav-title">
+          Tagline
+        </div>
+      </a>
+      
+    </div>
+    <div class="next col-xs-6">
+      
+      <span class="pull-right">
+        <a href="http://replace-this-with-your-hugo-site.com/usage/toc/" title="http://replace-this-with-your-hugo-site.com/usage/toc/">
+          <span>Next</span>
+          <span><i class="fa fa-arrow-right"></i></span>
+          <div class="nav-title">
+            Table of Contents
+          </div>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+
+
+                  </div> 
+                  
+                    <div class="col-md-2">
+                    
+<div class="visible-md visible-lg" id="toc-nav">
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#supported-languages">Supported languages</a></li>
+<li><a href="#tabbed-code-blocks">Tabbed code blocks</a></li>
+<li><a href="#copy-code-blocks">Copy code blocks</a></li>
+<li><a href="#dark-or-light-theme">Dark or light theme</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+                    </div>
+                  
+              </div> 
+            </div> 
+          </section> 
+        </section> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/vendor/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="/js/vendor/clipboard.min.js"></script>
+        <script src="/js/theme.js"></script>
+              
+            </body>
+</html>

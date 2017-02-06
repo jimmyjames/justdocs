@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributings on Hugo JustDocs Theme</title>
+    <link>http://replace-this-with-your-hugo-site.com/contributing/index.xml</link>
+    <description>Recent content in Contributings on Hugo JustDocs Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Nov 2016 08:54:46 -0600</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/contributing/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Contributing</title>
+      <link>http://replace-this-with-your-hugo-site.com/contributing/</link>
+      <pubDate>Fri, 25 Nov 2016 08:54:46 -0600</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/contributing/</guid>
+      <description>&lt;div class=&#34;callout info&#34;&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&#34;callout-icon&#34;&gt;
+          
+            
+              &lt;i class=&#34;fa fa-info&#34;&gt;&lt;/i&gt;
+            
+          
+        &lt;/td&gt;
+        &lt;td class=&#34;callout-content&#34;&gt;
+          &lt;p&gt;Coming Soon.&lt;/p&gt;
+
+        &lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

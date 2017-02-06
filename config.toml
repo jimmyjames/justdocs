@@ -3,6 +3,7 @@ title = "Hugo JustDocs Theme"
 languageCode = "en-us"
 theme = "hugo-just-docs-theme"
 MetaDataFormat = "yaml"
+publishDir = "docs"
 
 [params]
     # supported values: "monokai", "github"
