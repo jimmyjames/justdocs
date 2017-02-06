@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Hugo JustDocs Theme</title>
-    <link>http://replace-this-with-your-hugo-site.com/home/index.xml</link>
+    <link>https://jimmyjames.github.io/justdocs/home/home/index.xml</link>
     <description>Recent content in Homes on Hugo JustDocs Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Nov 2016 08:51:08 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/home/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimmyjames.github.io/justdocs/home/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>JustDocs</title>
-      <link>http://replace-this-with-your-hugo-site.com/home/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/home/</link>
       <pubDate>Sat, 26 Nov 2016 08:51:08 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/home/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/home/</guid>
       <description>
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -67,7 +67,7 @@ for number in count:
 
 
 &lt;p&gt;Developer documentation needs to show more than it tells.
-Code examples are key to good docs, and JustDocs features beautiful syntax highlighting with &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;, a &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/code-blocks&#34;&gt;tabbed code blocks shortcode&lt;/a&gt;, and the ability to copy code blocks to the clipboard.&lt;/p&gt;
+Code examples are key to good docs, and JustDocs features beautiful syntax highlighting with &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;, a &lt;a href=&#34;https://jimmyjames.github.io/justdocs/home/usage/code-blocks&#34;&gt;tabbed code blocks shortcode&lt;/a&gt;, and the ability to copy code blocks to the clipboard.&lt;/p&gt;
 
 &lt;h2 id=&#34;tagline&#34;&gt;Tagline&lt;/h2&gt;
 
@@ -102,7 +102,7 @@ tagline: &amp;lt;strong&amp;gt;Call to Action.&amp;lt;/strong&amp;gt;&amp;lt;br/
 &lt;/div&gt;
 
 
-&lt;p&gt;Bring attention to certain information by using the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/callouts&#34;&gt;custom callout shortcode&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bring attention to certain information by using the &lt;a href=&#34;https://jimmyjames.github.io/justdocs/home/usage/callouts&#34;&gt;custom callout shortcode&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;simple-technologies&#34;&gt;Simple technologies&lt;/h2&gt;
 

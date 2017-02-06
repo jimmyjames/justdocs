@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo JustDocs Theme</title>
-    <link>http://replace-this-with-your-hugo-site.com/index.xml</link>
+    <link>https://jimmyjames.github.io/justdocs/home/index.xml</link>
     <description>Recent content on Hugo JustDocs Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Nov 2016 08:51:08 -0600</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jimmyjames.github.io/justdocs/home/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>JustDocs</title>
-      <link>http://replace-this-with-your-hugo-site.com/home/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/home/</link>
       <pubDate>Sat, 26 Nov 2016 08:51:08 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/home/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/home/</guid>
       <description>
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
@@ -67,7 +67,7 @@ for number in count:
 
 
 &lt;p&gt;Developer documentation needs to show more than it tells.
-Code examples are key to good docs, and JustDocs features beautiful syntax highlighting with &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;, a &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/code-blocks&#34;&gt;tabbed code blocks shortcode&lt;/a&gt;, and the ability to copy code blocks to the clipboard.&lt;/p&gt;
+Code examples are key to good docs, and JustDocs features beautiful syntax highlighting with &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt;, a &lt;a href=&#34;https://jimmyjames.github.io/justdocs/home/usage/code-blocks&#34;&gt;tabbed code blocks shortcode&lt;/a&gt;, and the ability to copy code blocks to the clipboard.&lt;/p&gt;
 
 &lt;h2 id=&#34;tagline&#34;&gt;Tagline&lt;/h2&gt;
 
@@ -102,7 +102,7 @@ tagline: &amp;lt;strong&amp;gt;Call to Action.&amp;lt;/strong&amp;gt;&amp;lt;br/
 &lt;/div&gt;
 
 
-&lt;p&gt;Bring attention to certain information by using the &lt;a href=&#34;http://replace-this-with-your-hugo-site.com/usage/callouts&#34;&gt;custom callout shortcode&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Bring attention to certain information by using the &lt;a href=&#34;https://jimmyjames.github.io/justdocs/home/usage/callouts&#34;&gt;custom callout shortcode&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;simple-technologies&#34;&gt;Simple technologies&lt;/h2&gt;
 
@@ -120,10 +120,10 @@ Click the &amp;ldquo;Next&amp;rdquo; button below.&lt;/p&gt;
     
     <item>
       <title>Getting Started</title>
-      <link>http://replace-this-with-your-hugo-site.com/getting-started/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/getting-started/</link>
       <pubDate>Fri, 25 Nov 2016 08:54:46 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/getting-started/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/getting-started/</guid>
       <description>
 
 &lt;h2 id=&#34;install-hugo&#34;&gt;Install Hugo&lt;/h2&gt;
@@ -253,10 +253,10 @@ Check them out under the &amp;ldquo;Tutorials&amp;rdquo; section in the docs.&lt
     
     <item>
       <title>Organization</title>
-      <link>http://replace-this-with-your-hugo-site.com/usage/organization/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/usage/organization/</link>
       <pubDate>Fri, 25 Nov 2016 10:43:41 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/usage/organization/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/usage/organization/</guid>
       <description>
 
 &lt;h2 id=&#34;layout&#34;&gt;Layout&lt;/h2&gt;
@@ -324,10 +324,10 @@ weight: 15
     
     <item>
       <title>Tagline</title>
-      <link>http://replace-this-with-your-hugo-site.com/usage/tagline/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/usage/tagline/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/usage/tagline/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/usage/tagline/</guid>
       <description>
 
 &lt;p&gt;Provide an optional Call to Action for your content by specifying a &lt;code&gt;tagline&lt;/code&gt; in your front matter.&lt;/p&gt;
@@ -352,10 +352,10 @@ weight: 20
     
     <item>
       <title>Code Blocks</title>
-      <link>http://replace-this-with-your-hugo-site.com/usage/code-blocks/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/usage/code-blocks/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:33 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/usage/code-blocks/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/usage/code-blocks/</guid>
       <description>
 
 &lt;p&gt;JustDocs uses &lt;a href=&#34;https://highlightjs.org/&#34;&gt;highlight.js&lt;/a&gt; and Markdown &lt;a href=&#34;https://help.github.com/articles/creating-and-highlighting-code-blocks/&#34;&gt;fenced code blocks&lt;/a&gt; to show code examples.&lt;/p&gt;
@@ -464,19 +464,19 @@ If you prefer a lighter theme, just change it in your &lt;code&gt;config.toml&lt
     
     <item>
       <title>Table of Contents</title>
-      <link>http://replace-this-with-your-hugo-site.com/usage/toc/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/usage/toc/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/usage/toc/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/usage/toc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Callouts</title>
-      <link>http://replace-this-with-your-hugo-site.com/usage/callouts/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/usage/callouts/</link>
       <pubDate>Sat, 26 Nov 2016 20:29:18 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/usage/callouts/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/usage/callouts/</guid>
       <description>
 
 &lt;p&gt;Bring attention to important information in your docs by using one of JustDocs built-in &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/p&gt;
@@ -585,10 +585,10 @@ Something bad will probably happen if you do this.
     
     <item>
       <title>Contributing</title>
-      <link>http://replace-this-with-your-hugo-site.com/contributing/</link>
+      <link>https://jimmyjames.github.io/justdocs/home/contributing/</link>
       <pubDate>Fri, 25 Nov 2016 08:54:46 -0600</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/contributing/</guid>
+      <guid>https://jimmyjames.github.io/justdocs/home/contributing/</guid>
       <description>&lt;div class=&#34;callout info&#34;&gt;
   &lt;table&gt;
     &lt;tbody&gt;

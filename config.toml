@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://jimmyjames.github.io/justdocs/home/"
 title = "Hugo JustDocs Theme"
 languageCode = "en-us"
 theme = "hugo-just-docs-theme"
