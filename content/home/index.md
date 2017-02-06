@@ -15,7 +15,7 @@ It is free, open-source, simple, responsive, and customizable.
 
 JustDocs is content-first.
 
-It uses a simple layout that allows for easiy navigation and discoverability.
+It uses a simple layout that allows for easy navigation and discoverability.
 An optional Table of Contents on the right of the page shows readers where they currently are, and to easily navigate within a page.
 
 ## Responsive

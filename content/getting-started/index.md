@@ -36,6 +36,7 @@ MetaDataFormat = "yaml"
 Let's add our first page to our docs:
 
 1. Create a new document:
+
 ```bash
 hugo new home/index.md
 ```
