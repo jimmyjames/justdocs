@@ -14,6 +14,20 @@ If you haven't yet, install Hugo and become familiar with it by following [these
 Hugo is simple, fast, and well-documented.
 Take some time to learn about its features and how it works.
 
+## Create a new site
+
+Create a new Hugo site for your project:
+
+```bash
+hugo new site name-of-your-site
+```
+
+Change directories to the new site:
+
+```bash
+cd name-of-your-site
+```
+
 ## Install the JustDocs theme
 
 Clone the GitHub JustDocs theme repository:
@@ -44,6 +58,10 @@ hugo new home/index.md
 Open `config.toml` and add the following:
 
 ```toml
+[params]
+    # supported values: "monokai", "github"
+    codeTheme = "monokai"
+
 [[menu.main]]
     name = "Docs Home"
     identifier = "docs home"
@@ -61,7 +79,6 @@ Open `home/index.md` in your editor, and paste in the following:
 title: My Title
 tagline: This is a tagline, where you can provide summary/intro text for your readers.
 weight: 5
-next: /getting-started/index
 ---
 
 ## Step 1
