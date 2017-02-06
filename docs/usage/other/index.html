@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title></title>
+
+  
+  <link href="https://jimmyjames.github.io/justdocs/css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="https://jimmyjames.github.io/justdocs/css/vendor/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,300,400,500,700|Montserrat|Work+Sans:100,400" rel="stylesheet">
+
+  
+    <link href="https://jimmyjames.github.io/justdocs/css/vendor/monokai-sublime.css" rel="stylesheet">
+  
+
+  <link href="https://jimmyjames.github.io/justdocs/css/theme.css" rel="stylesheet">
+</head>
+
+  <body>
+    
+<header id="header" class="header">
+    <span class="toggle-nav">
+        <i class="fa fa-bars nav-menu"></i>
+    </span>
+    <div class="header-info">
+      <div class="github-link">
+        <a href="https://github.com/jimmyjames/hugo-just-docs-theme">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+</header>
+
+    <section class="container">
+
+      
+<aside>
+  <div id="sidebar">
+
+    <ul class="sidebar-nav sidebar-menu">
+      <li>
+        <a href="#" id="close-button">
+          <i class="fa fa-close fa-lg"></i>
+        </a>
+      </li>
+      
+      
+        
+            <li class="">
+              <a class="" href="/justdocs/home">
+                  <i class='fa fa-home'></i>
+                  <span>Docs Home</span>
+              </a>
+            </li>
+        
+      
+        
+            <li class="">
+              <a class="" href="/justdocs/getting-started/">
+                  <i class='fa fa-road'></i>
+                  <span>Getting Started</span>
+              </a>
+            </li>
+        
+      
+        
+          <li class="sub-menu active">
+            <a href="javascript:;">
+              <i class='fa fa-book'></i>
+              <span>Usage</span>
+              <span class="menu-arrow fa fa-angle-down"></span>
+
+            </a>
+            <ul class="sub open">
+              
+                <li >
+                  <a href="/justdocs/usage/organization/">Organization</a>
+                </li>
+              
+                <li >
+                  <a href="/justdocs/usage/tagline/">Tagline</a>
+                </li>
+              
+                <li >
+                  <a href="/justdocs/usage/code-blocks/">Code Blocks</a>
+                </li>
+              
+                <li >
+                  <a href="/justdocs/usage/toc/">Table of Contents</a>
+                </li>
+              
+                <li >
+                  <a href="/justdocs/usage/callouts/">Callouts</a>
+                </li>
+              
+                <li  class="active">
+                  <a href="/justdocs/usage/other/">Other Niceties</a>
+                </li>
+              
+            </ul>
+          </li>
+          
+      
+        
+            <li class="">
+              <a class="" href="/justdocs/contributing/">
+                  <i class='fa fa-pencil'></i>
+                  <span>Contributing</span>
+              </a>
+            </li>
+        
+      
+    </ul>
+    <section id="nav-footer">
+      <p>Built with <a href="https://github.com/jimmyjames/hugo-just-docs-theme/"><i class="fa fa-heart"></i></a> from <a href="https://github.com/jimmyjames/">JimmyJames</a> using <a href="http://gohugo.io/">Hugo</a></p>
+    </section>
+  </div>
+</aside>
+
+      
+      <section id="main-content">
+
+            <div class="article-tagline">
+              <h1> Other Niceties </h1>
+              
+              <p>Hugo offers several other nice features to make writing docs easy.<br/>Embedding videos, images, or gists are trivial.</p>
+              
+            </div>
+            <div class="article-body">
+              <div class="row">
+                
+                  <div class="main-col col-md-10 col-sm-12">
+                
+                
+
+<p>Hugo supports a feature called <a href="https://gohugo.io/extras/shortcodes/">shortcodes</a>, which allow for adding content that is not simple Markdown text.</p>
+
+<p>Hugo ships with several shortcodes, and custom ones can be created fairly easy.
+For example, the tagline, tabbed code blocks, and callouts are all custom shortcodes defined in the JustDocs theme.</p>
+
+<h2 id="embedding-videos">Embedding videos</h2>
+
+<p>Hugo has both a YouTube and Vimeo shortcode to allow for embedding videos right on your page.</p>
+
+<p>Just grabe the ID of the video, and use it like this:</p>
+
+<pre><code>{{&lt; youtube w7Ft2ymGmfc &gt;}}
+</code></pre>
+
+<p>The above results in:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/w7Ft2ymGmfc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
+
+<h2 id="embedding-gists">Embedding gists</h2>
+
+<p>If you have source code stored in GitHub gists, you can use the gist shortcode to easily pull that right into your docs.</p>
+
+<pre><code><script src="//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js"></script>
+</code></pre>
+
+<script src="//gist.github.com/jimmyjames/e1e3483be7c3ddea9c06.js"></script>
+
+<h2 id="usage">Usage</h2>
+
+<p>You can provide an optional <code>tagline</code> in the front matter.
+This will render below the document title.
+You can use HTML in the <code>tagline</code> value as well (useful for line breaks, icons, or text emphasis like <code>&lt;strong&gt;</code>).</p>
+
+<p>Yaml example:</p>
+
+<pre><code class="language-yaml">title: Tagline
+tagline: &lt;strong&gt;Call to Action.&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Every page features an optional Call to Action to give readers a brief summary of what they will learn, and why they should care.
+menu:
+  main:
+    parent: content
+weight: 20
+</code></pre>
+
+                
+  <div class="bottom-nav">
+  <nav class="nav-footer">
+    <div class="previous col-xs-6">
+      
+      <a href="https://jimmyjames.github.io/justdocs/contributing/" title="https://jimmyjames.github.io/justdocs/contributing/">
+        <span><i class="fa fa-arrow-left"></i></span>
+        <span>Previous</span>
+        <div class="nav-title">
+          Contributing
+        </div>
+      </a>
+      
+    </div>
+    <div class="next col-xs-6">
+      
+      <span class="pull-right">
+        <a href="https://jimmyjames.github.io/justdocs/contributing/" title="https://jimmyjames.github.io/justdocs/contributing/">
+          <span>Next</span>
+          <span><i class="fa fa-arrow-right"></i></span>
+          <div class="nav-title">
+            Contributings
+          </div>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+
+
+                  </div> 
+                  
+                    <div class="col-md-2">
+                    
+<div class="visible-md visible-lg" id="toc-nav">
+  <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#embedding-videos">Embedding videos</a></li>
+<li><a href="#embedding-gists">Embedding gists</a></li>
+<li><a href="#usage">Usage</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+
+                    </div>
+                  
+              </div> 
+            </div> 
+          </section> 
+        </section> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="https://jimmyjames.github.io/justdocs/js/vendor/bootstrap.min.js"></script>
+        <script src="https://jimmyjames.github.io/justdocs/js/vendor/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://jimmyjames.github.io/justdocs/js/vendor/clipboard.min.js"></script>
+        <script src="https://jimmyjames.github.io/justdocs/js/theme.js"></script>
+        
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-91488771-1', 'auto');
+              ga('send', 'pageview');
+
+          </script>
+        
+        </body>
+</html>
