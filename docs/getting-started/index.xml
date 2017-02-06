@@ -29,7 +29,7 @@ Take some time to learn about its features and how it works.&lt;/p&gt;
 &lt;p&gt;Clone the GitHub JustDocs theme repository:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd themes
-git clone https://github.com/jimmyjames/justdocs.git
+git clone https://github.com/jimmyjames/hugo-just-docs-theme.git
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Next, edit the &lt;code&gt;config.toml&lt;/code&gt; at the site&amp;rsquo;s root directory to use the theme.

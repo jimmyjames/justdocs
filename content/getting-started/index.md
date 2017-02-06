@@ -20,7 +20,7 @@ Clone the GitHub JustDocs theme repository:
 
 ```bash
 cd themes
-git clone https://github.com/jimmyjames/justdocs.git
+git clone https://github.com/jimmyjames/hugo-just-docs-theme.git
 ```
 
 Next, edit the `config.toml` at the site's root directory to use the theme.
@@ -114,5 +114,5 @@ The content will be put in the `/public` directory:
 hugo
 ```
 
-The Hugo documentation contains several tutorials for deploying and hosting with [GitHub](https://gohugo.io/tutorials/github-pages-blog/), [GitLab](https://gohugo.io/tutorials/hosting-on-gitlab/), [BitBucket](https://gohugo.io/tutorials/hosting-on-bitbucket/) [rsync](https://gohugo.io/tutorials/deployment-with-rsync/), etc. 
+The Hugo documentation contains several tutorials for deploying and hosting with [GitHub](https://gohugo.io/tutorials/github-pages-blog/), [GitLab](https://gohugo.io/tutorials/hosting-on-gitlab/), [BitBucket](https://gohugo.io/tutorials/hosting-on-bitbucket/) [rsync](https://gohugo.io/tutorials/deployment-with-rsync/), etc.
 Check them out under the "Tutorials" section in the docs.
