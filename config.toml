@@ -1,5 +1,5 @@
 baseurl = "http://replace-this-with-your-hugo-site.com/"
-title = "My New Hugo Site"
+title = "Hugo JustDocs Theme"
 languageCode = "en-us"
 theme = "hugo-just-docs-theme"
 MetaDataFormat = "yaml"
@@ -7,9 +7,6 @@ MetaDataFormat = "yaml"
 [params]
     # supported values: "monokai", "github"
     codeTheme = "monokai"
-
-    # todo
-    copyCode = true
 
 [[menu.main]]
     name = "Docs Home"
@@ -34,8 +31,3 @@ MetaDataFormat = "yaml"
     pre = "<i class='fa fa-pencil'></i>"
     url = "/contributing/"
     weight = -160
-[[menu.main]]
-  name="AsciiDoc Test"
-  identifier = "asciidoc"
-  url = "/formats/"
-  weight = -150

@@ -97,30 +97,19 @@ Note that each tab should specify a title for the tab.
 {{%/* /tabs */%}}
 ```
 
-{{% tabs %}}
-{{% tab "Tab 1" %}}
-```groovy
-println 'hi'
-```
-{{% /tab %}}
-{{% tab "Tab 2"%}}
-```
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-```
-{{% /tab %}}
-{{% /tabs %}}
-
 ## Copy code blocks
 
 As seen in the examples above, the contents of every code block can be copied to the reader's clipboard.
 When reading developer documentation, code samples may serve as a jumping-off point, or even as a solution to a specific problem.
 Instead of having to manually select and copy the code, readers can just click the Copy button!
+
+## Dark or light theme
+
+By default, JustDocs uses the dark monokai theme.
+If you prefer a lighter theme, just change it in your `config.toml`:
+
+```toml
+[params]
+    # supported values: "monokai", "github"
+    codeTheme = "monokai"
+```
