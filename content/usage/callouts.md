@@ -7,7 +7,7 @@ menu:
     parent: usage
 weight: 35
 prev: /usage/toc
-next: /contributing/index
+next: /usage/other
 ---
 
 Bring attention to important information in your docs by using one of JustDocs built-in [shortcodes](https://gohugo.io/extras/shortcodes/).
