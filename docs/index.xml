@@ -608,6 +608,32 @@ Something bad will probably happen if you do this.
     </item>
     
     <item>
+      <title>Other Niceties</title>
+      <link>https://jimmyjames.github.io/justdocs/usage/other/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimmyjames.github.io/justdocs/usage/other/</guid>
+      <description>
+
+&lt;h2 id=&#34;google-analytics&#34;&gt;Google analytics&lt;/h2&gt;
+
+&lt;p&gt;Simply add your analytics tracking number to &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;shortcodes&#34;&gt;Shortcodes&lt;/h2&gt;
+
+&lt;p&gt;Hugo supports a powerful feature called Shortcodes, which allow for adding content that is not simple Markdown text.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;documentation&lt;/a&gt;, and expirement with embedding videos, twitter feeds, images and figures, GitHub gists, etc.&lt;/p&gt;
+
+&lt;p&gt;Even better, Hugo makes adding your own shortcodes easy - it&amp;rsquo;s just HTML/CSS/JavaScript.
+This theme uses custom Shortcodes for the tabbed code blocks, tagline, and callouts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Contributing</title>
       <link>https://jimmyjames.github.io/justdocs/contributing/</link>
       <pubDate>Fri, 25 Nov 2016 08:54:46 -0600</pubDate>
@@ -633,32 +659,6 @@ Something bad will probably happen if you do this.
   &lt;/table&gt;
 &lt;/div&gt;
 
-</description>
-    </item>
-    
-    <item>
-      <title>Other Niceties</title>
-      <link>https://jimmyjames.github.io/justdocs/usage/other/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jimmyjames.github.io/justdocs/usage/other/</guid>
-      <description>
-
-&lt;h2 id=&#34;google-analytics&#34;&gt;Google analytics&lt;/h2&gt;
-
-&lt;p&gt;Simply add your analytics tracking number to &lt;code&gt;config.toml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;shortcodes&#34;&gt;Shortcodes&lt;/h2&gt;
-
-&lt;p&gt;Hugo supports a powerful feature called Shortcodes, which allow for adding content that is not simple Markdown text.&lt;/p&gt;
-
-&lt;p&gt;Check out the &lt;a href=&#34;https://gohugo.io/extras/shortcodes/&#34;&gt;documentation&lt;/a&gt;, and expirement with embedding videos, twitter feeds, images and figures, GitHub gists, etc.&lt;/p&gt;
-
-&lt;p&gt;Even better, Hugo makes adding your own shortcodes easy - it&amp;rsquo;s just HTML/CSS/JavaScript.
-This theme uses custom Shortcodes for the tabbed code blocks, tagline, and callouts.&lt;/p&gt;
 </description>
     </item>
     
